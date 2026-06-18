@@ -387,17 +387,19 @@ const App = {
         <span class="question-type">翻转卡</span>
         <span class="question-progress">${Training.currentSession.currentIndex + 1}/${Training.currentSession.legends.length}</span>
       </div>
-      <div class="flip-card" id="flipCard">
-        <div class="flip-front">
-          <div class="question-image">
-            <img src="${question.legend.icon}" alt="图例">
+      <div class="flip-container">
+        <div class="flip-card" id="flipCard">
+          <div class="flip-front">
+            <div class="question-image">
+              <img src="${question.legend.icon}" alt="图例">
+            </div>
+            <div class="flip-hint">点击翻转查看答案</div>
           </div>
-          <div class="flip-hint">点击翻转查看答案</div>
-        </div>
-        <div class="flip-back">
-          <div class="answer-name">${question.legend.name}</div>
-          <div class="answer-en">${question.legend.name_en}</div>
-          <div class="answer-desc">${question.legend.description?.substring(0, 100)}...</div>
+          <div class="flip-back">
+            <div class="answer-name">${question.legend.name}</div>
+            <div class="answer-en">${question.legend.name_en}</div>
+            <div class="answer-desc">${question.legend.description?.substring(0, 100)}...</div>
+          </div>
         </div>
       </div>
       <div class="self-report" id="selfReport" style="display:none">
