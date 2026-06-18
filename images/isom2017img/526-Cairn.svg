@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="19mm"
+   height="10.5mm"
+   viewBox="0 0 19 10.5"
+   version="1.1"
+   id="svg1152"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 526 Cairn.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview1154"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="13.407499"
+     inkscape:cy="22.683128"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1149">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1170">
+      <path
+         d="M 0,26.578 H 48.925 V 0 H 0 Z"
+         id="path1168" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1194">
+      <path
+         d="M 0,26.578 H 48.925 V 0 H 0 Z"
+         id="path1192" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1162"
+       inkscape:label="ISOM 526 Cairn"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.91860219,10.097172)">
+      <g
+         id="g1164">
+        <g
+           id="g1166"
+           clip-path="url(#clipPath1170)">
+          <g
+             id="g1172"
+             transform="translate(2.2676,16.808)">
+            <path
+               d="M 0,0 C 0.625,0 1.193,-0.254 1.603,-0.663 L 1.602,-0.664 c 0.411,-0.411 0.666,-0.979 0.666,-1.604 0,-0.624 -0.255,-1.191 -0.666,-1.601 L 1.603,-3.87 C 1.193,-4.28 0.625,-4.534 0,-4.534 c -0.627,0 -1.193,0.254 -1.604,0.664 l 0.001,10e-4 c -0.411,0.41 -0.665,0.977 -0.665,1.601 0,0.625 0.254,1.193 0.665,1.604 l -0.001,0.001 C -1.193,-0.254 -0.627,0 0,0 M 0.97,-1.297 C 0.722,-1.049 0.379,-0.896 0,-0.896 c -0.379,0 -0.723,-0.153 -0.971,-0.401 h -0.002 c -0.246,-0.248 -0.399,-0.591 -0.399,-0.971 0,-0.378 0.153,-0.722 0.399,-0.969 h 0.002 c 0.248,-0.248 0.592,-0.402 0.971,-0.402 0.379,0 0.722,0.154 0.97,0.402 h 0.002 c 0.247,0.247 0.399,0.591 0.399,0.969 0,0.38 -0.152,0.723 -0.399,0.971 z"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1174" />
+          </g>
+          <g
+             id="g1176"
+             transform="translate(2.2676,14.9369)">
+            <path
+               d="m 0,0 c 0.219,0 0.396,-0.178 0.396,-0.396 0,-0.219 -0.177,-0.397 -0.396,-0.397 -0.219,0 -0.397,0.178 -0.397,0.397 C -0.397,-0.178 -0.219,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path1178" />
+          </g>
+          <text
+             transform="matrix(1,0,0,-1,37.7515,20.5723)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text1182"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan1180">0.16</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,11.3745,12.0684)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text1186"><tspan
+           x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.953 20.733999"
+           y="0"
+           sodipodi:role="line"
+           id="tspan1184">0.8 (OM)</tspan></text>
+      <g
+         id="g1188">
+        <g
+           id="g1190"
+           clip-path="url(#clipPath1194)">
+          <g
+             id="g1196"
+             transform="translate(5.0798,16.808)">
+            <path
+               d="M 0,0 H 4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path1198" />
+          </g>
+          <g
+             id="g1200"
+             transform="translate(5.0798,12.2582)">
+            <path
+               d="M 0,0 H 4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path1202" />
+          </g>
+          <text
+             transform="matrix(1,0,0,-1,0.1191,2.1465)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text1206"><tspan
+               x="0 3.507 5.1030002 8.2950001 9.8909998 13.083"
+               y="0"
+               sodipodi:role="line"
+               id="tspan1204">ø 0.14</tspan></text>
+          <g
+             id="g1208"
+             transform="translate(2.3691,13.9828)">
+            <path
+               d="M 0,0 3.139,-5.622"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path1210" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

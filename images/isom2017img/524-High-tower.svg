@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="20mm"
+   height="10.5mm"
+   viewBox="0 0 20 10.5"
+   version="1.1"
+   id="svg857"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 524 High tower.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview859"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.192802"
+     inkscape:cx="94.566832"
+     inkscape:cy="57.837218"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs854">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath875">
+      <path
+         d="M 0,26.543 H 51.44 V 0 H 0 Z"
+         id="path873" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g871"
+       clip-path="url(#clipPath875)"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.97459597,10.090963)">
+      <g
+         id="g877"
+         transform="translate(28.2071,14.2861)">
+        <path
+           d="M 0,0 C 1.254,0 2.268,-1.015 2.268,-2.268 2.268,-3.52 1.254,-4.534 0,-4.534 c -1.253,0 -2.268,1.014 -2.268,2.266 C -2.268,-1.015 -1.253,0 0,0"
+           style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path879" />
+      </g>
+      <g
+         id="g881"
+         transform="translate(28.2071,15.9873)">
+        <path
+           d="M 0,0 V -7.937"
+           style="fill:none;stroke:#1d1d1b;stroke-width:0.907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path883" />
+      </g>
+      <g
+         id="g885"
+         transform="translate(24.2383,12.0186)">
+        <path
+           d="M 0,0 H 7.937"
+           style="fill:none;stroke:#1d1d1b;stroke-width:0.907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path887" />
+      </g>
+      <g
+         id="g889"
+         transform="translate(3.2715,22.3525)">
+        <path
+           d="M 0,0 3.24,-6.284 H 1.07 v -9.849 h -2.172 v 9.849 h -2.169 z"
+           style="fill:#e30613;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path891" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,27.4092,20.5371)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text897"><tspan
+           x="0 3.1919999 4.7880001"
+           y="0"
+           sodipodi:role="line"
+           id="tspan893">0.3</tspan><tspan
+           x="12.859 16.051001 17.646999 20.839001"
+           y="10.99"
+           sodipodi:role="line"
+           id="tspan895">0.16</tspan></text>
+      <g
+         id="g899"
+         transform="translate(30.4746,19.1052)">
+        <path
+           d="M 0,0 V -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path901" />
+      </g>
+      <g
+         id="g903"
+         transform="translate(32.1758,19.1052)">
+        <path
+           d="M 0,0 V -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path905" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,9.9404,2.1465)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text909"><tspan
+           x="0 3.507 5.1030002 8.2950001 9.8909998"
+           y="0"
+           sodipodi:role="line"
+           id="tspan907">ø 0.8</tspan></text>
+      <g
+         id="g911"
+         transform="translate(24.0293,7.4492)">
+        <path
+           d="M 0,0 2.457,2.458"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path913" />
+      </g>
+      <g
+         id="g915"
+         transform="translate(34.3018,12.0186)">
+        <path
+           d="M 0,0 H 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path917" />
+      </g>
+    </g>
+  </g>
+</svg>

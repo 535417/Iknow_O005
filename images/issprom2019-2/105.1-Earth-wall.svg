@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30mm"
+   height="15mm"
+   viewBox="0 0 30 15"
+   version="1.1"
+   id="svg2098"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 105 Earth wall.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview2100"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.192802"
+     inkscape:cx="-7.2743717"
+     inkscape:cy="47.581546"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2095">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2128">
+      <path
+         d="M 0,36.001 H 81.274 V 0 H 0 Z"
+         id="path2126" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2164">
+      <path
+         d="M 0,36.001 H 81.274 V 0 H 0 Z"
+         id="path2162" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2180">
+      <path
+         d="M 0,36.001 H 81.274 V 0 H 0 Z"
+         id="path2178" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2196">
+      <path
+         d="M 0,36.001 H 81.274 V 0 H 0 Z"
+         id="path2194" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2108"
+       inkscape:label="ISOM 105 Earth wall"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.64768653,13.69014)">
+      <g
+         id="g2110"
+         transform="translate(6.146,21.2564)">
+        <path
+           d="M 0,0 H 56.252"
+           style="fill:none;stroke:#d07500;stroke-width:1.02;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path2112" />
+      </g>
+      <g
+         id="g2114"
+         transform="translate(48.666,7.6575)">
+        <path
+           d="M 0,0 H 11.338"
+           style="fill:none;stroke:#d07500;stroke-width:1.02;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path2116" />
+      </g>
+      <g
+         id="g2118"
+         transform="translate(48.8067,7.6575)">
+        <path
+           d="M 0,0 H 11.055"
+           style="fill:none;stroke:#d07500;stroke-width:1.02;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path2120" />
+      </g>
+      <g
+         id="g2122">
+        <g
+           id="g2124"
+           clip-path="url(#clipPath2128)">
+          <g
+             id="g2130"
+             transform="translate(11.3882,22.5318)">
+            <path
+               d="M 0,0 C 0.705,0 1.276,-0.57 1.276,-1.275 1.276,-1.98 0.705,-2.551 0,-2.551 c -0.703,0 -1.275,0.571 -1.275,1.276 C -1.275,-0.57 -0.703,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2132" />
+          </g>
+          <g
+             id="g2134"
+             transform="translate(22.728,22.5318)">
+            <path
+               d="M 0,0 C 0.703,0 1.275,-0.57 1.275,-1.275 1.275,-1.98 0.703,-2.551 0,-2.551 c -0.705,0 -1.277,0.571 -1.277,1.276 C -1.277,-0.57 -0.705,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2136" />
+          </g>
+          <g
+             id="g2138"
+             transform="translate(34.0659,22.5318)">
+            <path
+               d="M 0,0 C 0.704,0 1.275,-0.57 1.275,-1.275 1.275,-1.98 0.704,-2.551 0,-2.551 c -0.704,0 -1.275,0.571 -1.275,1.276 C -1.275,-0.57 -0.704,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2140" />
+          </g>
+          <g
+             id="g2142"
+             transform="translate(45.4048,22.5318)">
+            <path
+               d="m 0,0 c 0.704,0 1.274,-0.57 1.274,-1.275 0,-0.705 -0.57,-1.276 -1.274,-1.276 -0.705,0 -1.276,0.571 -1.276,1.276 C -1.276,-0.57 -0.705,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2144" />
+          </g>
+          <g
+             id="g2146"
+             transform="translate(56.7437,22.5318)">
+            <path
+               d="M 0,0 C 0.703,0 1.275,-0.57 1.275,-1.275 1.275,-1.98 0.703,-2.551 0,-2.551 c -0.705,0 -1.276,0.571 -1.276,1.276 C -1.276,-0.57 -0.705,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2148" />
+          </g>
+          <g
+             id="g2150"
+             transform="translate(54.334,8.929)">
+            <path
+               d="m 0,0 c 0.705,0 1.277,-0.57 1.277,-1.275 0,-0.704 -0.572,-1.276 -1.277,-1.276 -0.703,0 -1.275,0.572 -1.275,1.276 C -1.275,-0.57 -0.703,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2152" />
+          </g>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,69.5288,18.5918)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2156"><tspan
+           x="0 3.1919999 4.7880001 7.98"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2154">0.18</tspan></text>
+      <g
+         id="g2158">
+        <g
+           id="g2160"
+           clip-path="url(#clipPath2164)">
+          <text
+             transform="matrix(1,0,0,-1,13.999,29.9946)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2168"><tspan
+               x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.631 19.775"
+               y="0"
+               sodipodi:role="line"
+               id="tspan2166">2.0 (CC)</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,34.4551,5.3877)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2172"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2170">min.</tspan></text>
+      <g
+         id="g2174">
+        <g
+           id="g2176"
+           clip-path="url(#clipPath2180)">
+          <text
+             transform="matrix(1,0,0,-1,0,7.4541)"
+             style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2184"><tspan
+               x="0"
+               y="0"
+               id="tspan2182">ø</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,5.8729,7.4541)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2188"><tspan
+           x="0 3.1919999 4.7880001 7.98"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2186">0.45</tspan></text>
+      <g
+         id="g2190">
+        <g
+           id="g2192"
+           clip-path="url(#clipPath2196)">
+          <text
+             transform="matrix(1,0,0,-1,55.4351,29.9941)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2200"><tspan
+               x="0 3.1919999 4.7880001 7.98 11.172 12.768 14.679 19.145 23.926001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan2198">0.77 (OM)</tspan></text>
+          <g
+             id="g2202"
+             transform="translate(11.3882,27.9702)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2204" />
+          </g>
+          <g
+             id="g2206"
+             transform="translate(57.9374,27.9062)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2208" />
+          </g>
+          <g
+             id="g2210"
+             transform="translate(57.9374,27.9062)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2212" />
+          </g>
+          <g
+             id="g2214"
+             transform="translate(57.9374,27.9062)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2216" />
+          </g>
+          <g
+             id="g2218"
+             transform="translate(22.728,27.9702)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2220" />
+          </g>
+          <g
+             id="g2222"
+             transform="translate(11.2153,19.1304)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2224" />
+          </g>
+          <g
+             id="g2226"
+             transform="translate(62.3028,27.9062)">
+            <path
+               d="M 0,0 V -4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2228" />
+          </g>
+          <path
+             d="m 28.823,14.74 h 36.85 V 0.567 h -36.85 z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path2230" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

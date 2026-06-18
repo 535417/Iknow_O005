@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24mm"
+   height="19mm"
+   viewBox="0 0 24 19"
+   version="1.1"
+   id="svg535"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 522 Canopy.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview537"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="74.963942"
+     inkscape:cy="30.946869"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs532">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath555">
+      <path
+         d="M 0,49.335 H 62.795 V 0 H 0 Z"
+         id="path553" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath567">
+      <path
+         d="M 0,49.335 H 62.795 V 0 H 0 Z"
+         id="path565" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath585">
+      <path
+         d="M 0,49.335 H 62.795 V 0 H 0 Z"
+         id="path583" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g545"
+       inkscape:label="ISOM 522 Canopy"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.98879968,18.030405)">
+      <path
+         d="M 0.283,21.827 H 34.299 V 38.835 H 0.283 Z"
+         style="fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path547" />
+      <g
+         id="g549">
+        <g
+           id="g551"
+           clip-path="url(#clipPath555)">
+          <path
+             d="M 0.283,38.835 H 34.299 V 21.827 H 0.283 Z"
+             style="fill:none;stroke:#1d1d1b;stroke-width:0.567;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path557" />
+        </g>
+      </g>
+      <path
+         d="m 22.669,6.52 h 2.268 v 2.268 h -2.268 z"
+         style="fill:#dadada;fill-opacity:1;fill-rule:evenodd;stroke:#1d1d1b;stroke-width:0.567;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+         id="path559" />
+      <g
+         id="g561">
+        <g
+           id="g563"
+           clip-path="url(#clipPath567)">
+          <text
+             transform="matrix(1,0,0,-1,26.4614,43.3301)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text573"><tspan
+               x="0 3.1919999 4.7880001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan569">0.1</tspan><tspan
+               x="24.843 28.035 31.226999"
+               y="14.252"
+               sodipodi:role="line"
+               id="tspan571">20%</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g575"
+         transform="translate(20.2074,40.9674)">
+        <path
+           d="M 0,0 4.548,3.638"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path577" />
+      </g>
+      <g
+         id="g579">
+        <g
+           id="g581"
+           clip-path="url(#clipPath585)">
+          <path
+             d="M 1.701,14.74 H 32.882 V 0.567 H 1.701 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path587" />
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,7.9762,5.3865)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text591"><tspan
+           x="0 4.7807951 6.0547404 9.246604"
+           y="0"
+           sodipodi:role="line"
+           id="tspan589">min.</tspan></text>
+    </g>
+  </g>
+</svg>

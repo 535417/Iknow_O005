@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24mm"
+   height="15.5mm"
+   viewBox="0 0 24 15.5"
+   version="1.1"
+   id="svg2808"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 603 Spot height.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview2810"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.192802"
+     inkscape:cx="63.561314"
+     inkscape:cy="54.498162"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2805">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2826">
+      <path
+         d="M 0,39.681 H 63.058 V 0 H 0 Z"
+         id="path2824" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2856">
+      <path
+         d="M 0,39.681 H 63.058 V 0 H 0 Z"
+         id="path2854" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2818"
+       inkscape:label="ISOM 603 Spot height"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.87726969,14.578126)">
+      <g
+         id="g2820">
+        <g
+           id="g2822"
+           clip-path="url(#clipPath2826)">
+          <g
+             id="g2828"
+             transform="translate(20.7322,31.3816)">
+            <path
+               d="m 0,0 c 0.47,0 0.85,-0.381 0.85,-0.85 0,-0.469 -0.38,-0.851 -0.85,-0.851 -0.47,0 -0.85,0.382 -0.85,0.851 C -0.85,-0.381 -0.47,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2830" />
+          </g>
+          <g
+             id="g2832"
+             transform="translate(31.0906,11.4188)">
+            <path
+               d="m 0,0 c 3.882,-3.127 6.466,-2.557 9.794,-6.231 3.329,-3.674 9.173,-3.059 12.638,-4.47 3.463,-1.409 6.748,4.687 7.254,8.251 0.505,3.561 3.335,6.434 0.587,8.274 C 27.527,7.662 29.457,8.841 9.555,10.176 -10.346,11.511 -19.443,5.799 -19.025,3.652 -18.607,1.508 0,0 0,0"
+               style="fill:#80cfee;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2834" />
+          </g>
+          <g
+             id="g2836"
+             transform="translate(31.0906,11.4188)">
+            <path
+               d="m 0,0 c 3.882,-3.127 6.466,-2.557 9.794,-6.231 3.329,-3.674 9.173,-3.059 12.638,-4.47 3.463,-1.409 6.748,4.687 7.254,8.251 0.505,3.561 3.335,6.434 0.587,8.274 C 27.527,7.662 29.457,8.841 9.555,10.176 -10.346,11.511 -19.443,5.799 -19.025,3.652 -18.607,1.508 0,0 0,0 Z"
+               style="fill:none;stroke:#1d1d1b;stroke-width:1.02;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2838" />
+          </g>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,23.8291,26.4272)"
+         style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.625px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#1d1d1b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2844"><tspan
+           x="0 6.4635 12.927"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2840">219</tspan><tspan
+           x="15.751875 22.215376 28.678875"
+           y="18.181499"
+           sodipodi:role="line"
+           id="tspan2842">451</tspan></text>
+      <text
+         transform="matrix(1,0,0,-1,46.7422,28.1533)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2848"><tspan
+           x="0 3.1919999 4.7880001"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2846">1.5</tspan></text>
+      <g
+         id="g2850">
+        <g
+           id="g2852"
+           clip-path="url(#clipPath2856)">
+          <text
+             transform="matrix(1,0,0,-1,8.9395,33.6743)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2860"><tspan
+               x="0 3.507 5.1030002 8.2950001 9.8909998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan2858">ø 0.3</tspan></text>
+          <g
+             id="g2862"
+             transform="translate(42.9676,34.8426)">
+            <path
+               d="M 0,0 H 3.816"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2864" />
+          </g>
+          <g
+             id="g2866"
+             transform="translate(42.9676,26.1912)">
+            <path
+               d="M 0,0 H 3.816"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2868" />
+          </g>
+          <g
+             id="g2870"
+             transform="translate(3.2719,30.0106)">
+            <path
+               d="M 0,0 3.24,-6.285 H 1.069 v -9.848 h -2.171 v 9.848 h -2.17 z"
+               style="fill:#e30613;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path2872" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

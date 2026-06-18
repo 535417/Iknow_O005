@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30mm"
+   height="4mm"
+   viewBox="0 0 30 4"
+   version="1.1"
+   id="svg10772"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 503 Road.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview10774"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="31.621461"
+     inkscape:cy="-7.8421222"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10769">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10790">
+      <path
+         d="M 0,8.152 H 79.205 V 0 H 0 Z"
+         id="path10788" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g10786"
+       clip-path="url(#clipPath10790)"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.0714826,3.6290189)">
+      <g
+         id="g10792"
+         transform="translate(0,4.6198)">
+        <path
+           d="M 0,0 H 56.692"
+           style="fill:none;stroke:#1d1d1b;stroke-width:1.984;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path10794" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,68.0317,2.1465)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text10798"><tspan
+           x="0 3.1919999 4.7880001 7.98"
+           y="0"
+           sodipodi:role="line"
+           id="tspan10796">0.35</tspan></text>
+    </g>
+  </g>
+</svg>

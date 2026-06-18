@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="18mm"
+   height="8mm"
+   viewBox="0 0 18 8"
+   version="1.1"
+   id="svg3290"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 109 Small knoll.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview3292"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.6233469"
+     inkscape:cx="75.344704"
+     inkscape:cy="70.238928"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3287">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3308">
+      <path
+         d="M 0,18.347 H 47.374 V 0 H 0 Z"
+         id="path3306" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3336">
+      <path
+         d="M 0,18.347 H 47.374 V 0 H 0 Z"
+         id="path3334" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3300"
+       inkscape:label="ISOM 109 Small knoll"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.68608187,7.236154)">
+      <g
+         id="g3302">
+        <g
+           id="g3304"
+           clip-path="url(#clipPath3308)">
+          <g
+             id="g3310"
+             transform="translate(20.3166,15.5117)">
+            <path
+               d="m 0,0 c -0.782,0 -1.416,0.634 -1.416,1.417 0,0.782 0.634,1.418 1.416,1.418 0.783,0 1.418,-0.636 1.418,-1.418 C 1.418,0.634 0.783,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path3312" />
+          </g>
+          <g
+             id="g3314"
+             transform="translate(1.418,11.8916)">
+            <path
+               d="M 0,0 C -0.783,0 -1.418,0.635 -1.418,1.417 -1.418,2.2 -0.783,2.835 0,2.835 0.782,2.835 1.416,2.2 1.416,1.417 1.416,0.635 0.782,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path3316" />
+          </g>
+          <g
+             id="g3318"
+             transform="translate(11.5,5.1709)">
+            <path
+               d="m 0,0 c -0.783,0 -1.418,0.634 -1.418,1.417 0,0.782 0.635,1.418 1.418,1.418 0.783,0 1.416,-0.636 1.416,-1.418 C 1.416,0.634 0.783,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path3320" />
+          </g>
+          <g
+             id="g3322"
+             transform="translate(5.0371)">
+            <path
+               d="M 0,0 C -0.783,0 -1.418,0.634 -1.418,1.417 -1.418,2.2 -0.783,2.835 0,2.835 0.782,2.835 1.416,2.2 1.416,1.417 1.416,0.634 0.782,0 0,0"
+               style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path3324" />
+          </g>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,33.5195,9.7832)"
+         style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text3328"><tspan
+           x="0"
+           y="0"
+           id="tspan3326">ø</tspan></text>
+      <g
+         id="g3330">
+        <g
+           id="g3332"
+           clip-path="url(#clipPath3336)">
+          <text
+             transform="matrix(1,0,0,-1,39.3929,9.7832)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3340"><tspan
+               x="0 3.1919999 4.7880001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3338">0.5</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

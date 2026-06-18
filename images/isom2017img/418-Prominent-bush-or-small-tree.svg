@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="19mm"
+   height="8mm"
+   viewBox="0 0 19 8"
+   version="1.1"
+   id="svg10093"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 418 Prominent bush or small tree.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview10095"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="20.153411"
+     inkscape:cy="3.7945753"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10090">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10111">
+      <path
+         d="M 0,19.719 H 48.949 V 0 H 0 Z"
+         id="path10109" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g10107"
+       clip-path="url(#clipPath10111)"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.87363689,7.6716054)">
+      <g
+         id="g10113"
+         transform="translate(4.0167,5.6749)">
+        <path
+           d="m 0,0 c 0.939,0 1.701,-0.76 1.701,-1.7 0,-0.939 -0.762,-1.702 -1.701,-1.702 -0.94,0 -1.701,0.763 -1.701,1.702 0,0.94 0.761,1.7 1.701,1.7"
+           style="fill:#31aa47;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path10115" />
+      </g>
+      <g
+         id="g10117"
+         transform="translate(3.4498,6.7646)">
+        <path
+           d="M 0,0 V 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path10119" />
+      </g>
+      <g
+         id="g10121"
+         transform="translate(4.5836,6.7646)">
+        <path
+           d="M 0,0 V 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path10123" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,0,13.7129)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text10127"><tspan
+           x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.953 20.733999"
+           y="0"
+           sodipodi:role="line"
+           id="tspan10125">0.2 (OM)</tspan></text>
+      <g
+         id="g10129"
+         transform="translate(4.0167,4.541)">
+        <path
+           d="M 0,0 C 0.313,0 0.567,-0.253 0.567,-0.567 0.567,-0.88 0.313,-1.134 0,-1.134 c -0.313,0 -0.567,0.254 -0.567,0.567 C -0.567,-0.253 -0.313,0 0,0"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path10131" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,35.097,2.2729)"
+         style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.9997px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text10135"><tspan
+           x="0"
+           y="0"
+           id="tspan10133">ø</tspan></text>
+      <text
+         transform="matrix(1,0,0,-1,40.969748,2.2729)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text10139"><tspan
+           x="0 3.1918633 4.7877946"
+           y="0"
+           sodipodi:role="line"
+           id="tspan10137">0.6</tspan></text>
+    </g>
+  </g>
+</svg>

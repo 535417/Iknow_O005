@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg18447" width="75.591064" height="39.629734" viewBox="0 0 75.591064 39.629734" sodipodi:docname="ISSprOM 515 Uncrossable wall.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <defs id="defs18451">
+    <clipPath id="clipPath18463">
+      <path d="M 0,29.722 H 56.693 V 0 H 0 Z" id="path18461"></path>
+    </clipPath>
+    <clipPath id="clipPath18483">
+      <path d="M 0,29.722 H 56.693 V 0 H 0 Z" id="path18481"></path>
+    </clipPath>
+  </defs>
+  <g id="g18455" inkscape:groupmode="layer" inkscape:label="Page 1" transform="matrix(1.3333333,0,0,-1.3333333,0,39.629733)">
+    <g id="g18457">
+      <g id="g18459" clip-path="url(#clipPath18463)">
+        <g id="g18465" transform="translate(0,28.5884)">
+          <path d="M 0,0 H 56.693" style="fill:none;stroke:#1d1d1b;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path18467"></path>
+        </g>
+      </g>
+    </g>
+    <g id="g18469" transform="translate(31.5706,7.551)">
+      <path d="M 0,0 H 5.669" style="fill:none;stroke:#1d1d1b;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path18471"></path>
+    </g>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,3.6119,19.4119)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text18475">
+      <tspan x="0 4.7807951 6.0547404 9.246604 10.842535 12.438467 15.63033 17.226261" y="0" sodipodi:role="line" id="tspan18473">min. 0.4</tspan>
+    </text>
+    <g id="g18477">
+      <g id="g18479" clip-path="url(#clipPath18483)">
+        <path d="m 12.769,14.74 h 30.75 V 0.567 h -30.75 z" style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path18485"></path>
+      </g>
+    </g>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,17.6277,5.6858)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text18489">
+      <tspan x="0 4.7807951 6.0547404 9.246604" y="0" sodipodi:role="line" id="tspan18487">min.</tspan>
+    </text>
+  </g>
+</svg>

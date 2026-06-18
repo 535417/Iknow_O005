@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1348" width="100.02173" height="62.264133" viewBox="0 0 100.02173 62.264133" sodipodi:docname="ISSprOM 105.2 Retaining earth wall.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)">
+  <defs id="defs1352">
+    <clipPath id="clipPath1364">
+      <path d="M 0,46.698 H 75.016 V 0 H 0 Z" id="path1362"></path>
+    </clipPath>
+  </defs>
+  <g id="g1356" inkscape:groupmode="layer" inkscape:label="Page 1" transform="matrix(1.3333333,0,0,-1.3333333,0,62.264133)">
+    <g id="g1358">
+      <g id="g1360" clip-path="url(#clipPath1364)">
+        <g id="g1366" transform="translate(0,32.9833)">
+          <path d="M 0,0 H 56.693" style="fill:none;stroke:#d07500;stroke-width:1.531;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1368"></path>
+        </g>
+        <g id="g1370" transform="translate(35.9319,6.9274)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.096,0 1.985,0.89 1.985,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1372"></path>
+        </g>
+        <g id="g1374" transform="translate(3.6833,32.3597)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.096,0 1.985,0.89 1.985,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1376"></path>
+        </g>
+        <g id="g1378" transform="translate(14.4548,32.3597)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.096,0 1.985,0.89 1.985,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1380"></path>
+        </g>
+        <g id="g1382" transform="translate(25.2263,32.3597)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.096,0 1.985,0.89 1.985,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1384"></path>
+        </g>
+        <g id="g1386" transform="translate(35.9977,32.3597)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.096,0 1.985,0.89 1.985,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1388"></path>
+        </g>
+        <g id="g1390" transform="translate(46.7698,32.3597)">
+          <path d="m 0,0 c 0,-1.094 0.889,-1.984 1.985,-1.984 1.095,0 1.984,0.89 1.984,1.984 z" style="fill:#d07500;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path1392"></path>
+        </g>
+        <path d="M 12.739,14.74 H 47.838 V 0.567 H 12.739 Z" style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1394"></path>
+        <g id="g1396" transform="translate(33.9482,7.551)">
+          <path d="M 0,0 H 7.937" style="fill:none;stroke:#d07500;stroke-width:1.531;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1398"></path>
+        </g>
+        <text xml:space="preserve" transform="matrix(1,0,0,-1,63.844,30.5863)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text1404">
+          <tspan x="0 3.1918633 4.7877946 7.9796581" y="0" sodipodi:role="line" id="tspan1400">0.27</tspan>
+          <tspan x="-56.781567 -53.589703 -51.993771 -48.801907 -47.205978 -45.295059 -41.151237 -37.007416" y="-10.107567" sodipodi:role="line" id="tspan1402">1.9 (CC)</tspan>
+        </text>
+        <g id="g1406" transform="translate(48.7545,25.7236)">
+          <path d="M 0,0 V 3.826" style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1408"></path>
+        </g>
+        <g id="g1410" transform="translate(16.4363,35.767)">
+          <path d="M 0,0 V 2.92" style="fill:none;stroke:#e30613;stroke-width:0.277;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1412"></path>
+        </g>
+        <g id="g1414" transform="translate(5.6647,35.767)">
+          <path d="M 0,0 V 2.92" style="fill:none;stroke:#e30613;stroke-width:0.277;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path1416"></path>
+        </g>
+      </g>
+    </g>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,39.3694,19.2514)" style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.9997px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text1420">
+      <tspan x="0" y="0" id="tspan1418">ø</tspan>
+    </text>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,45.242148,19.2514)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text1426">
+      <tspan x="0 3.1918633 4.7877946" y="0" sodipodi:role="line" id="tspan1422">0.7</tspan>
+      <tspan x="-26.115881 -21.335085 -20.06114 -16.869276" y="13.565419" sodipodi:role="line" id="tspan1424">min.</tspan>
+    </text>
+  </g>
+</svg>

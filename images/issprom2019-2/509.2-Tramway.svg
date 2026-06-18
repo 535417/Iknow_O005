@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg14500" width="96.574135" height="24.993467" viewBox="0 0 96.574135 24.993467" sodipodi:docname="ISSprOM 509.2 Tramway.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <defs id="defs14504">
+    <clipPath id="clipPath14516">
+      <path d="M 0,18.745 H 72.431 V 0 H 0 Z" id="path14514"></path>
+    </clipPath>
+    <clipPath id="clipPath14540">
+      <path d="M 0,18.745 H 72.431 V 0 H 0 Z" id="path14538"></path>
+    </clipPath>
+  </defs>
+  <g id="g14508" inkscape:groupmode="layer" inkscape:label="Page 1" transform="matrix(1.3333333,0,0,-1.3333333,0,24.993467)">
+    <g id="g14510">
+      <g id="g14512" clip-path="url(#clipPath14516)">
+        <g id="g14518" transform="translate(0,4.8918)">
+          <path d="M 0,0 H 56.693" style="fill:none;stroke:#1d1d1b;stroke-width:0.454;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path14520"></path>
+        </g>
+        <g id="g14522" transform="translate(0,3.1916)">
+          <path d="M 0,0 H 56.693" style="fill:none;stroke:#1d1d1b;stroke-width:0.454;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path14524"></path>
+        </g>
+        <text xml:space="preserve" transform="matrix(1,0,0,-1,37.576,12.7396)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text14528">
+          <tspan x="0 3.1918633 4.7877946 7.9796581" y="0" sodipodi:role="line" id="tspan14526">0.08</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g14530" transform="translate(37.249,11.4895)">
+      <path d="M 0,0 -2.951,-6.025" style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path14532"></path>
+    </g>
+    <g id="g14534">
+      <g id="g14536" clip-path="url(#clipPath14540)">
+        <text xml:space="preserve" transform="matrix(1,0,0,-1,64.4507,2.1469)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text14544">
+          <tspan x="0 3.1918633 4.7877946" y="0" sodipodi:role="line" id="tspan14542">0.3</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="g14546" transform="translate(59.1758,4.8918)">
+      <path d="M 0,0 H 3.312" style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path14548"></path>
+    </g>
+    <g id="g14550" transform="translate(59.1758,3.1916)">
+      <path d="M 0,0 H 3.312" style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path14552"></path>
+    </g>
+  </g>
+</svg>

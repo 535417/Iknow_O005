@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg18751"
+   xml:space="preserve"
+   width="91.928398"
+   height="48.007866"
+   viewBox="0 0 91.928398 48.007866"
+   sodipodi:docname="ISSprOM 703 Control Point.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+<defs
+     id="defs18755"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18765"><path
+         d="M 0,36.006 H 68.946 V 0 H 0 Z"
+         id="path18763" /></clipPath></defs><sodipodi:namedview
+     id="namedview18753"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="17.392983"
+     inkscape:cx="45.966813"
+     inkscape:cy="24.003933"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g18757" /><g
+     id="g18757"
+     inkscape:groupmode="layer"
+     inkscape:label="ISSprOM 703 Control Point"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,48.007867)"><g
+       id="g18759"><g
+         id="g18761"
+         clip-path="url(#clipPath18765)"><g
+           id="g18767"
+           transform="translate(35.3185,11.6559)"><path
+             d="m 0,0 c -1.297,-0.8 -2.824,-1.261 -4.459,-1.261 -4.697,0 -8.503,3.807 -8.503,8.504 0,4.696 3.806,8.504 8.503,8.504 4.697,0 8.505,-3.808 8.505,-8.504 0,-1.393 -0.335,-2.707 -0.928,-3.868"
+             style="fill:none;stroke:#b04191;stroke-width:0.992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path18769" /></g><text
+           transform="matrix(1,0,0,-1,43.6772,22.2759)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#b04191;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text18773"><tspan
+             x="0"
+             y="0"
+             id="tspan18771">1</tspan></text><text
+           transform="matrix(1,0,0,-1,-5e-4,2.1465)"
+           style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text18779"><tspan
+             x="0 3.507 5.1030002 8.2950001 9.8909998 13.083 14.679 16.59 20.733999 24.878"
+             y="0"
+             sodipodi:role="line"
+             id="tspan18775">ø 6.0 (CC)</tspan><tspan
+             x="57.771 60.963001 62.558998 65.750999"
+             y="-5.0960002"
+             sodipodi:role="line"
+             id="tspan18777">0.35</tspan></text></g></g></g></svg>

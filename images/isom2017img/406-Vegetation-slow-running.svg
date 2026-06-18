@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="34mm"
+   height="23mm"
+   viewBox="0 0 34 23"
+   version="1.1"
+   id="svg5523"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 406 Vegetation slow running.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview5525"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="50.847309"
+     inkscape:cy="40.391146"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5520">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5547">
+      <path
+         d="M 44.587,30.739 H 70.665 V 59.086 H 44.587 Z"
+         id="path5545" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5573">
+      <path
+         d="M 0,59.191 H 91.531 V 0 H 0 Z"
+         id="path5571" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5613">
+      <path
+         d="M 0,59.191 H 91.531 V 0 H 0 Z"
+         id="path5611" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5533"
+       inkscape:label="ISOM 406 Vegetation, slow running"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.90124881,21.940458)">
+      <path
+         d="M 13.973,30.843 H 70.666 V 59.19 H 13.973 Z"
+         style="fill:#d1e6ca;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path5535" />
+      <g
+         id="g5537"
+         transform="translate(13.9727,23.3889)">
+        <path
+           d="M 0,0 H 56.693"
+           style="fill:none;stroke:#d1e6ca;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path5539" />
+      </g>
+      <g
+         id="g5541">
+        <g
+           id="g5543"
+           clip-path="url(#clipPath5547)">
+          <g
+             id="g5549"
+             transform="translate(44.7627,35.2248)">
+            <path
+               d="M 0,0 30.757,-8.196"
+               style="fill:none;stroke:#ffffff;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path5551" />
+          </g>
+          <g
+             id="g5553"
+             transform="translate(44.7627,44.0295)">
+            <path
+               d="M 0,0 32.958,-8.786"
+               style="fill:none;stroke:#ffffff;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path5555" />
+          </g>
+          <g
+             id="g5557"
+             transform="translate(44.7627,52.8342)">
+            <path
+               d="M 0,0 35.159,-9.377"
+               style="fill:none;stroke:#ffffff;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path5559" />
+          </g>
+          <g
+             id="g5561"
+             transform="translate(44.7627,61.6369)">
+            <path
+               d="M 0,0 37.36,-9.966"
+               style="fill:none;stroke:#ffffff;stroke-width:2.268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path5563" />
+          </g>
+        </g>
+      </g>
+      <path
+         d="m 51.759,4.819 h -5.67 v 5.67 h 5.67 z"
+         style="fill:#d1e6ca;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path5565" />
+      <g
+         id="g5567">
+        <g
+           id="g5569"
+           clip-path="url(#clipPath5573)">
+          <text
+             transform="matrix(1,0,0,-1,0,42.9721)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text5579"><tspan
+               x="0 3.1918633 6.3837266"
+               y="0"
+               sodipodi:role="line"
+               id="tspan5575">30%</tspan><tspan
+               x="80.685539 85.466339 86.74028 89.932144"
+               y="18.927189"
+               sodipodi:role="line"
+               id="tspan5577">min.</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,80.3604,17.0446)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text5583"><tspan
+           x="0 3.1918633 4.7877946"
+           y="0"
+           sodipodi:role="line"
+           id="tspan5581">0.4</tspan></text>
+      <g
+         id="g5585"
+         transform="translate(73.5577,23.3889)">
+        <path
+           d="M 0,0 H 4.939"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path5587" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,79.8045,32.116)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text5593"><tspan
+           x="0 3.1918633 4.7877946"
+           y="0"
+           sodipodi:role="line"
+           id="tspan5589">0.4</tspan><tspan
+           x="0 3.1918633 4.7877946"
+           y="-13.579418"
+           sodipodi:role="line"
+           id="tspan5591">1.5</tspan></text>
+      <g
+         id="g5595"
+         transform="translate(77.1768,36.3469)">
+        <path
+           d="m 0,0 -3.619,-0.046 2.787,-2.699"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path5597" />
+      </g>
+      <g
+         id="g5599"
+         transform="translate(73.5577,53.9816)">
+        <path
+           d="M 0,0 4.284,-1.147"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path5601" />
+      </g>
+      <g
+         id="g5603"
+         transform="translate(73.5577,45.1643)">
+        <path
+           d="M 0,0 4.284,-1.148"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path5605" />
+      </g>
+      <g
+         id="g5607">
+        <g
+           id="g5609"
+           clip-path="url(#clipPath5613)">
+          <path
+             d="M 26.729,14.74 H 57.91 V 0.567 H 26.729 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path5615" />
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,31.4883,5.543)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text5619"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan5617">min.</tspan></text>
+    </g>
+  </g>
+</svg>

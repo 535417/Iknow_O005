@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28mm"
+   height="11mm"
+   viewBox="0 0 28 11"
+   version="1.1"
+   id="svg9247"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 415 Distinct cultivation boundary.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview9249"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="28.417153"
+     inkscape:cy="2.9513363"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs9244">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9265">
+      <path
+         d="M 0,27.022 H 73.535 V 0 H 0 Z"
+         id="path9263" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9289">
+      <path
+         d="M 0,27.022 H 73.535 V 0 H 0 Z"
+         id="path9287" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g9257"
+       inkscape:label="ISOM 415 Distinct cultivation boundary"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.0794275,10.094463)">
+      <g
+         id="g9259">
+        <g
+           id="g9261"
+           clip-path="url(#clipPath9265)">
+          <text
+             transform="matrix(1,0,0,-1,62.3618,21.0161)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9269"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9267">0.10</tspan></text>
+          <g
+             id="g9271"
+             transform="translate(0,23.4527)">
+            <path
+               d="M 0,0 H 56.693"
+               style="fill:none;stroke:#00111e;stroke-width:0.567;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path9273" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g9275"
+         transform="translate(30.0264,7.525)">
+        <path
+           d="M 0,0 H 11.339"
+           style="fill:none;stroke:#00111e;stroke-width:0.567;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path9277" />
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,14.9434,5.147)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text9281"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan9279">min.</tspan></text>
+      <g
+         id="g9283">
+        <g
+           id="g9285"
+           clip-path="url(#clipPath9289)">
+          <path
+             d="M 11.338,14.741 H 45.354 V 0.567 H 11.338 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path9291" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

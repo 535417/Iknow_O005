@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.5mm"
+   height="10mm"
+   viewBox="0 0 28.5 10"
+   version="1.1"
+   id="svg1019"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 525 Small tower.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview1021"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9295174"
+     inkscape:cx="44.60734"
+     inkscape:cy="33.139291"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1016">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1049">
+      <path
+         d="M 0,22.941 H 74.983 V 0 H 0 Z"
+         id="path1047" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1065">
+      <path
+         d="M 0,22.941 H 74.983 V 0 H 0 Z"
+         id="path1063" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1029"
+       inkscape:label="ISOM 525 Small tower"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.0721548,8.8865543)">
+      <g
+         id="g1031"
+         transform="translate(28.2207,9.4911)">
+        <path
+           d="M 0,0 V -5.669"
+           style="fill:none;stroke:#1d1d1b;stroke-width:0.907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1033" />
+      </g>
+      <g
+         id="g1035"
+         transform="translate(25.3867,9.2069)">
+        <path
+           d="M 0,0 H 5.669"
+           style="fill:none;stroke:#1d1d1b;stroke-width:0.907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1037" />
+      </g>
+      <g
+         id="g1039"
+         transform="translate(0,9.8478)">
+        <path
+           d="M 0,0 H 2.17 V -9.848 H 4.34 V 0 h 2.171 l -3.24,6.285 z"
+           style="fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path1041" />
+      </g>
+      <g
+         id="g1043">
+        <g
+           id="g1045"
+           clip-path="url(#clipPath1049)">
+          <text
+             transform="matrix(1,0,0,-1,63.8101,14.8574)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text1053"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan1051">0.16</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,38.9644,4.1865)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text1057"><tspan
+           x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.953 20.733999"
+           y="0"
+           sodipodi:role="line"
+           id="tspan1055">1.0 (OM)</tspan></text>
+      <g
+         id="g1059">
+        <g
+           id="g1061"
+           clip-path="url(#clipPath1065)">
+          <text
+             transform="matrix(1,0,0,-1,24.0645,16.9346)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text1069"><tspan
+               x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.953 20.733999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan1067">1.0 (OM)</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g1071"
+         transform="translate(33.1817,9.671)">
+        <path
+           d="M 0,0 H 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1073" />
+      </g>
+      <g
+         id="g1075"
+         transform="translate(33.1817,3.8221)">
+        <path
+           d="M 0,0 H 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1077" />
+      </g>
+      <g
+         id="g1079"
+         transform="translate(31.0557,15.6871)">
+        <path
+           d="M 0,0 V -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1081" />
+      </g>
+      <g
+         id="g1083"
+         transform="translate(25.3867,15.6871)">
+        <path
+           d="M 0,0 V -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path1085" />
+      </g>
+    </g>
+  </g>
+</svg>

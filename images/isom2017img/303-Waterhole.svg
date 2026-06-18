@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="27.5mm"
+   height="9.5mm"
+   viewBox="0 0 27.5 9.5"
+   version="1.1"
+   id="svg488"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 303 Waterhole.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview490"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.192802"
+     inkscape:cx="97.667384"
+     inkscape:cy="63.561314"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs485">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath510">
+      <path
+         d="M 0,22.6 H 72.54 V 0 H 0 Z"
+         id="path508" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g498"
+       inkscape:label="ISOM 303 Waterhole"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.00082,8.5761411)">
+      <g
+         id="g500"
+         transform="translate(28.2516,7.5369)">
+        <path
+           d="M 0,0 -1.985,-5.107 -3.97,0 h 1.02 L -1.983,-2.713 -1.017,0 Z"
+           style="fill:#009fe3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path502" />
+      </g>
+      <g
+         id="g504">
+        <g
+           id="g506"
+           clip-path="url(#clipPath510)">
+          <text
+             transform="matrix(1,0,0,-1,61.3662,12.4971)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text518"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan512">0.18</tspan><tspan
+               x="-38.556 -35.363998 -33.768002 -30.576 -28.98 -27.069 -22.603001 -17.822001"
+               y="-4.0949998"
+               sodipodi:role="line"
+               id="tspan514">0.7 (OM)</tspan><tspan
+               x="-23.093 -19.900999 -18.305 -15.113 -13.517 -11.606 -7.1399999 -2.359"
+               y="9.9329996"
+               sodipodi:role="line"
+               id="tspan516">0.8 (OM)</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g520"
+         transform="translate(24.2506,10.3716)">
+        <path
+           d="M 0,0 V 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path522" />
+      </g>
+      <g
+         id="g524"
+         transform="translate(36.188,2.4295)">
+        <path
+           d="M 0,0 H -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path526" />
+      </g>
+      <g
+         id="g528"
+         transform="translate(28.2516,10.3716)">
+        <path
+           d="M 0,0 V 4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path530" />
+      </g>
+      <g
+         id="g532"
+         transform="translate(36.188,7.5369)">
+        <path
+           d="M 0,0 H -4.252"
+           style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path534" />
+      </g>
+      <g
+         id="g536"
+         transform="translate(0,9.8478)">
+        <path
+           d="M 0,0 H 2.17 V -9.848 H 4.342 V 0 h 2.17 l -3.24,6.285 z"
+           style="fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path538" />
+      </g>
+    </g>
+  </g>
+</svg>

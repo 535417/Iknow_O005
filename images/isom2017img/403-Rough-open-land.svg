@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29mm"
+   height="21mm"
+   viewBox="0 0 29 21"
+   version="1.1"
+   id="svg4388"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 403 Rough open land.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview4390"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9647587"
+     inkscape:cx="125.30531"
+     inkscape:cy="122.60694"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4385">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4410">
+      <path
+         d="M 0,53.01 H 76.686 V 0 H 0 Z"
+         id="path4408" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4426">
+      <path
+         d="M 0,53.01 H 76.686 V 0 H 0 Z"
+         id="path4424" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4398"
+       inkscape:label="ISOM 403 Rough open land"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.0381583,19.850375)">
+      <path
+         d="M 0,24.662 H 56.691 V 53.01 H 0 Z"
+         style="fill:#ffe0a9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path4400" />
+      <path
+         d="m 31.829,10.612 h 5.669 V 4.943 h -5.669 z"
+         style="fill:#ffe0a9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path4402" />
+      <g
+         id="g4404">
+        <g
+           id="g4406"
+           clip-path="url(#clipPath4410)">
+          <text
+             transform="matrix(1,0,0,-1,65.1978,35.9146)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4414"><tspan
+               x="0 3.1919999 6.3839998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4412">50%</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,17.7324,5.5298)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text4418"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan4416">min.</tspan></text>
+      <g
+         id="g4420">
+        <g
+           id="g4422"
+           clip-path="url(#clipPath4426)">
+          <path
+             d="M 12.758,14.741 H 43.94 V 0.567 H 12.758 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path4428" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

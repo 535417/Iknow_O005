@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29mm"
+   height="19mm"
+   viewBox="0 0 29 19"
+   version="1.1"
+   id="svg12993"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 513.1 Wall.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview12995"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9647587"
+     inkscape:cx="163.08241"
+     inkscape:cy="89.551976"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs12990">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13011">
+      <path
+         d="M 0,48.793 H 76.37 V 0 H 0 Z"
+         id="path13009" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13027">
+      <path
+         d="M 0,48.793 H 76.37 V 0 H 0 Z"
+         id="path13025" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13077">
+      <path
+         d="M 0,48.793 H 76.37 V 0 H 0 Z"
+         id="path13075" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13103">
+      <path
+         d="M 0,48.793 H 76.37 V 0 H 0 Z"
+         id="path13101" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g13003"
+       inkscape:label="ISOM 513.1 Wall"
+       transform="matrix(0.35277777,0,0,-0.35277777,1.0792768,17.946595)">
+      <g
+         id="g13005">
+        <g
+           id="g13007"
+           clip-path="url(#clipPath13011)">
+          <g
+             id="g13013"
+             transform="translate(0,34.583)">
+            <path
+               d="M 0,0 H 56.692"
+               style="fill:none;stroke:#1d1d1b;stroke-width:0.794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13015" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g13017"
+         transform="translate(31.4646,7.6536)">
+        <path
+           d="M 0,0 H 7.937"
+           style="fill:none;stroke:#1d1d1b;stroke-width:0.794;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+           id="path13019" />
+      </g>
+      <g
+         id="g13021">
+        <g
+           id="g13023"
+           clip-path="url(#clipPath13027)">
+          <g
+             id="g13029"
+             transform="translate(5.4863,35.7168)">
+            <path
+               d="M 0,0 C 0.626,0 1.134,-0.508 1.134,-1.134 1.134,-1.76 0.626,-2.269 0,-2.269 c -0.627,0 -1.135,0.509 -1.135,1.135 C -1.135,-0.508 -0.627,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13031" />
+          </g>
+          <g
+             id="g13033"
+             transform="translate(16.8242,35.7168)">
+            <path
+               d="M 0,0 C 0.627,0 1.135,-0.508 1.135,-1.134 1.135,-1.76 0.627,-2.269 0,-2.269 c -0.625,0 -1.133,0.509 -1.133,1.135 C -1.133,-0.508 -0.625,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13035" />
+          </g>
+          <g
+             id="g13037"
+             transform="translate(28.1631,35.7168)">
+            <path
+               d="M 0,0 C 0.626,0 1.134,-0.508 1.134,-1.134 1.134,-1.76 0.626,-2.269 0,-2.269 c -0.626,0 -1.134,0.509 -1.134,1.135 C -1.134,-0.508 -0.626,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13039" />
+          </g>
+          <g
+             id="g13041"
+             transform="translate(39.5019,35.7168)">
+            <path
+               d="M 0,0 C 0.626,0 1.134,-0.508 1.134,-1.134 1.134,-1.76 0.626,-2.269 0,-2.269 c -0.626,0 -1.135,0.509 -1.135,1.135 C -1.135,-0.508 -0.626,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13043" />
+          </g>
+          <g
+             id="g13045"
+             transform="translate(50.8398,35.7168)">
+            <path
+               d="M 0,0 C 0.627,0 1.135,-0.508 1.135,-1.134 1.135,-1.76 0.627,-2.269 0,-2.269 c -0.625,0 -1.133,0.509 -1.133,1.135 C -1.133,-0.508 -0.625,0 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13047" />
+          </g>
+          <g
+             id="g13049"
+             transform="translate(35.0603,8.7866)">
+            <path
+               d="M 0,0 C 0.625,0.206 1.299,-0.134 1.506,-0.76 1.711,-1.385 1.371,-2.06 0.745,-2.267 0.12,-2.472 -0.554,-2.131 -0.76,-1.506 -0.966,-0.88 -0.627,-0.206 0,0"
+               style="fill:#1d1d1b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               id="path13051" />
+          </g>
+          <g
+             id="g13053"
+             transform="translate(51.8965,37.4176)">
+            <path
+               d="M 0,0 V 4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13055" />
+          </g>
+          <g
+             id="g13057"
+             transform="translate(56.6924,37.4176)">
+            <path
+               d="M 0,0 V 4.252"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13059" />
+          </g>
+          <text
+             transform="matrix(1,0,0,-1,65.1973,32.1108)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text13063"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan13061">0.14</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,41.7925,21.0518)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text13069"><tspan
+           x="0 3.507 5.1030002 8.2950001 9.8909998"
+           y="0"
+           sodipodi:role="line"
+           id="tspan13065">ø 0.4</tspan><tspan
+           x="-34.167 -30.975 -29.379 -26.187 -24.591 -22.68 -18.535999 -14.392"
+           y="-0.28"
+           sodipodi:role="line"
+           id="tspan13067">2.0 (CC)</tspan></text>
+      <g
+         id="g13071">
+        <g
+           id="g13073"
+           clip-path="url(#clipPath13077)">
+          <g
+             id="g13079"
+             transform="translate(5.4863,27.4044)">
+            <path
+               d="M 0,0 V 4.094"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13081" />
+          </g>
+          <g
+             id="g13083"
+             transform="translate(16.8242,27.4044)">
+            <path
+               d="M 0,0 V 4.094"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13085" />
+          </g>
+          <g
+             id="g13087"
+             transform="translate(50.8398,27.5612)">
+            <path
+               d="M 0,0 V 4.095"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path13089" />
+          </g>
+          <path
+             d="M 12.756,14.74 H 43.937 V 0.567 H 12.756 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path13091" />
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,17.2544,5.3877)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text13095"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan13093">min.</tspan></text>
+      <g
+         id="g13097">
+        <g
+           id="g13099"
+           clip-path="url(#clipPath13103)">
+          <text
+             transform="matrix(1,0,0,-1,50.2954,42.7866)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text13107"><tspan
+               x="0 3.1919999 4.7880001 7.98 9.5760002 11.487 15.953 20.733999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan13105">0.8 (OM)</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

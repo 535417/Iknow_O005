@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg5450" width="81.788002" height="44.653866" viewBox="0 0 81.788002 44.653866" sodipodi:docname="ISSprOM 214 Bare rock.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <defs id="defs5454">
+    <clipPath id="clipPath5466">
+      <path d="M 0,33.49 H 61.341 V 0 H 0 Z" id="path5464"></path>
+    </clipPath>
+  </defs>
+  <g id="g5458" inkscape:groupmode="layer" inkscape:label="Page 1" transform="matrix(1.3333333,0,0,-1.3333333,0,44.653867)">
+    <g id="g5460">
+      <g id="g5462" clip-path="url(#clipPath5466)">
+        <g id="g5468" transform="translate(3.798,26.5217)">
+          <path d="m 0,0 c 1.944,-2.521 3.744,-3.384 8.857,-3.744 5.111,-0.36 9.359,-0.936 9.359,1.728 0,2.663 -2.375,1.583 -5.688,1.44 -3.312,-0.144 -7.271,-1.224 -9,1.8 -1.728,3.024 3.889,2.592 0,4.753 C -0.36,8.136 -4.968,6.408 -3.528,4.248 -2.088,2.088 0,0 0,0" style="fill:#bcbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path5470"></path>
+        </g>
+        <g id="g5472" transform="translate(31.5177,28.466)">
+          <path d="M 0,0 C -1.512,-0.792 -3.455,-3.456 -1.008,-3.24 1.441,-3.024 4.32,-1.944 4.105,-0.36 3.889,1.224 2.088,1.08 0,0" style="fill:#bcbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path5474"></path>
+        </g>
+        <g id="g5476" transform="translate(33.4621,21.6974)">
+          <path d="m 0,0 c 1.656,-1.512 4.177,-3.672 5.832,-2.448 1.655,1.224 4.104,4.392 1.8,4.392 C 5.328,1.944 6.265,-0.072 4.104,0.576 1.944,1.225 -1.296,1.225 0,0" style="fill:#bcbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path5478"></path>
+        </g>
+        <path d="m 31.522,4.819 h -5.67 v 5.67 h 5.67 z" style="fill:#bcbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path5480"></path>
+        <text xml:space="preserve" transform="matrix(1,0,0,-1,48.2581,23.6402)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text5484">
+          <tspan x="0 3.1918633 6.3837266 7.9796581" y="0" sodipodi:role="line" id="tspan5482">35 %</tspan>
+        </text>
+        <path d="M 6.577,14.74 H 37.758 V 0.567 H 6.577 Z" style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path5486"></path>
+      </g>
+    </g>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,11.1488,5.2661)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text5490">
+      <tspan x="0 4.7807951 6.0547404 9.246604" y="0" sodipodi:role="line" id="tspan5488">min.</tspan>
+    </text>
+  </g>
+</svg>

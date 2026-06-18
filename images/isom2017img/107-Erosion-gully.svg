@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="18mm"
+   height="22mm"
+   viewBox="0 0 18 22"
+   version="1.1"
+   id="svg2636"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ISOM 107 Erosion gully.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <sodipodi:namedview
+     id="namedview2638"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.1241863"
+     inkscape:cx="36.981481"
+     inkscape:cy="49.861575"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2633">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2654">
+      <path
+         d="M 0,60.094 H 46.488 V 0 H 0 Z"
+         id="path2652" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2698">
+      <path
+         d="M 0,60.094 H 46.488 V 0 H 0 Z"
+         id="path2696" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2714">
+      <path
+         d="M 0,60.094 H 46.488 V 0 H 0 Z"
+         id="path2712" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2746">
+      <path
+         d="M 0,60.094 H 46.488 V 0 H 0 Z"
+         id="path2744" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2646"
+       inkscape:label="ISOM 107 Erosion gully"
+       transform="matrix(0.35277777,0,0,-0.35277777,0.80003351,21.427873)">
+      <g
+         id="g2648">
+        <g
+           id="g2650"
+           clip-path="url(#clipPath2654)">
+          <g
+             id="g2656"
+             transform="translate(22.0788,15.0131)">
+            <path
+               d="m 0,0 c -0.228,0 -1.929,-0.16 -2.699,-0.562 0.831,-0.434 2.473,-0.709 2.982,-0.709 h 0.666 c 0.226,0 1.867,0.168 2.872,0.709 C 2.927,-0.209 1.77,0.069 1.156,0.062 Z"
+               style="fill:#d07500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path2658" />
+          </g>
+          <g
+             id="g2660"
+             transform="translate(3.1847,42.7875)">
+            <path
+               d="m 0,0 c 2.835,-2.126 5.669,-4.252 10.63,-5.314 4.961,-1.064 7.44,-1.418 10.63,-3.899 3.189,-2.48 3.896,-3.543 5.314,-6.023"
+               style="fill:none;stroke:#d07500;stroke-width:1.417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2662" />
+          </g>
+          <g
+             id="g2664"
+             transform="translate(16.6495,48.1019)">
+            <path
+               d="m 0,0 c 2.834,-2.126 5.314,-3.543 6.023,-7.087 0.708,-3.543 0.708,-4.252 1.417,-7.086"
+               style="fill:none;stroke:#d07500;stroke-width:1.417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2666" />
+          </g>
+          <g
+             id="g2668"
+             transform="translate(20.546,44.9135)">
+            <path
+               d="M 0,0 C 1.418,1.417 2.127,2.479 2.48,4.252"
+               style="fill:none;stroke:#d07500;stroke-width:1.417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2670" />
+          </g>
+          <g
+             id="g2672"
+             transform="translate(2.7647,42.2094)">
+            <path
+               d="M 0,0 C -0.148,0.148 -0.295,0.296 -0.443,0.443 -0.526,0.527 -1.018,1.072 -1.101,1.154 L -2.11,2.578 -0.002,1.607 0.857,1.133 Z"
+               style="fill:#d07500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path2674" />
+          </g>
+          <g
+             id="g2676"
+             transform="translate(29.1495,27.2074)">
+            <path
+               d="m 0,0 1.218,0.699 c 0.095,-0.18 0.17,-0.258 0.272,-0.48 0.114,-0.25 0.461,-1.094 0.537,-1.293 l 0.455,-1.293 c -0.296,0.191 -0.947,0.75 -1.242,0.942 -0.213,0.179 -0.672,0.662 -0.852,0.88 z"
+               style="fill:#d07500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path2678" />
+          </g>
+          <g
+             id="g2680"
+             transform="translate(17.0802,48.6664)">
+            <path
+               d="M 0,0 -0.689,0.336 -2.176,0.993 -4.148,1.829 -3.11,0.74 -2.343,0.055 -0.842,-1.131 Z"
+               style="fill:#d07500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path2682" />
+          </g>
+          <g
+             id="g2684"
+             transform="translate(23.7237,49.0189)">
+            <path
+               d="M 0,0 V 0.631 L 0.005,2.258 -0.02,4.399 -0.602,3.013 -0.922,2.034 -1.395,0.273 Z"
+               style="fill:#d07500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path2686" />
+          </g>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,30.96,34.7402)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2690"><tspan
+           x="0 3.1919999 4.7880001 7.98"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2688">0.25</tspan></text>
+      <g
+         id="g2692">
+        <g
+           id="g2694"
+           clip-path="url(#clipPath2698)">
+          <text
+             transform="matrix(1,0,0,-1,17.0742,54.0874)"
+             style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text2702"><tspan
+               x="0 3.1919999 4.7880001 7.98"
+               y="0"
+               sodipodi:role="line"
+               id="tspan2700">0.75</tspan></text>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,16.9912,3.707)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2706"><tspan
+           x="0 3.1919999 4.7880001 7.98 11.172 12.768 14.679 19.145 23.926001"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2704">1.15 (OM)</tspan></text>
+      <g
+         id="g2708">
+        <g
+           id="g2710"
+           clip-path="url(#clipPath2714)">
+          <g
+             id="g2716"
+             transform="translate(19.3089,12.2827)">
+            <path
+               d="M 0,0 V -2.835"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2718" />
+          </g>
+          <g
+             id="g2720"
+             transform="translate(25.8286,12.2827)">
+            <path
+               d="M 0,0 V -2.835"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2722" />
+          </g>
+          <g
+             id="g2724"
+             transform="translate(13.5152,51.3031)">
+            <path
+               d="M 0,0 1.622,2.486"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2726" />
+          </g>
+          <g
+             id="g2728"
+             transform="translate(29.339,31.1127)">
+            <path
+               d="M 0,0 1.621,2.485"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2730" />
+          </g>
+          <g
+             id="g2732"
+             transform="translate(17.2765,48.9555)">
+            <path
+               d="M 0,0 1.815,2.348"
+               style="fill:none;stroke:#e30613;stroke-width:0.283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+               id="path2734" />
+          </g>
+        </g>
+      </g>
+      <text
+         transform="matrix(1,0,0,-1,3.6162,12.1167)"
+         style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="text2738"><tspan
+           x="0 4.7810001 6.0549998 9.2469997"
+           y="0"
+           sodipodi:role="line"
+           id="tspan2736">min.</tspan></text>
+      <g
+         id="g2740">
+        <g
+           id="g2742"
+           clip-path="url(#clipPath2746)">
+          <path
+             d="M 0.567,20.41 H 45.921 V 0.567 H 0.567 Z"
+             style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1"
+             id="path2748" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

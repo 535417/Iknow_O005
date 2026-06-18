@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg11759" width="98.606796" height="34.8228" viewBox="0 0 98.606796 34.8228" sodipodi:docname="ISSprOM 415 Distinct cultivation boundary.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <defs id="defs11763">
+    <clipPath id="clipPath11775">
+      <path d="M 0,26.117 H 73.955 V 0 H 0 Z" id="path11773"></path>
+    </clipPath>
+    <clipPath id="clipPath11791">
+      <path d="M 0,26.117 H 73.955 V 0 H 0 Z" id="path11789"></path>
+    </clipPath>
+  </defs>
+  <g id="g11767" inkscape:groupmode="layer" inkscape:label="Page 1" transform="matrix(1.3333333,0,0,-1.3333333,0,34.8228)">
+    <g id="g11769">
+      <g id="g11771" clip-path="url(#clipPath11775)">
+        <g id="g11777" transform="translate(0,22.508)">
+          <path d="M 0,0 H 56.693" style="fill:none;stroke:#1d1d1b;stroke-width:0.85;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path11779"></path>
+        </g>
+      </g>
+    </g>
+    <g id="g11781" transform="translate(32.876,7.6535)">
+      <path d="M 0,0 H 5.67" style="fill:none;stroke:#1d1d1b;stroke-width:0.85;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path11783"></path>
+    </g>
+    <g id="g11785">
+      <g id="g11787" clip-path="url(#clipPath11791)">
+        <text xml:space="preserve" transform="matrix(1,0,0,-1,62.7825,20.1109)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:6.9997px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text11795">
+          <tspan x="0 3.1918633 4.7877946 7.9796581" y="0" sodipodi:role="line" id="tspan11793">0.15</tspan>
+        </text>
+        <path d="M 11.339,14.74 H 45.355 V 0.567 H 11.339 Z" style="fill:none;stroke:#312783;stroke-width:1.134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.926;stroke-dasharray:none;stroke-opacity:1" id="path11797"></path>
+      </g>
+    </g>
+    <text xml:space="preserve" transform="matrix(1,0,0,-1,17.4365,5.542)" style="font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:7px;font-family:'Arial Narrow';-inkscape-font-specification:ArialNarrow;writing-mode:lr-tb;fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none" id="text11801">
+      <tspan x="0 4.7810001 6.0549998 9.2469997" y="0" sodipodi:role="line" id="tspan11799">min.</tspan>
+    </text>
+  </g>
+</svg>

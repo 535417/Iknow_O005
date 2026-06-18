@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>定向越野图例训练系统</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <div class="header">
+      <h1>定向越野图例训练</h1>
+      <div class="subtitle">Orienteering Legend Training System</div>
+    </div>
+
+    <!-- Home View -->
+    <div class="view active" id="homeView">
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="totalSeen">0</div>
+          <div class="stat-label">已学习</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="avgSpeed">0%</div>
+          <div class="stat-label">秒认率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="todayCount">0</div>
+          <div class="stat-label">今日练习</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">390</div>
+          <div class="stat-label">总图例</div>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-card">
+        <div class="progress-header">
+          <h3>学习进度</h3>
+          <span id="progressText">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Mastery Levels -->
+      <div class="mastery-grid">
+        <div class="mastery-item">
+          <div class="mastery-dot new"></div>
+          <div class="mastery-count" id="newCount">390</div>
+          <div class="mastery-label">未学习</div>
+        </div>
+        <div class="mastery-item">
+          <div class="mastery-dot learning"></div>
+          <div class="mastery-count" id="learningCount">0</div>
+          <div class="mastery-label">学习中</div>
+        </div>
+        <div class="mastery-item">
+          <div class="mastery-dot stable"></div>
+          <div class="mastery-count" id="stableCount">0</div>
+          <div class="mastery-label">稳定</div>
+        </div>
+        <div class="mastery-item">
+          <div class="mastery-dot automatic"></div>
+          <div class="mastery-count" id="automaticCount">0</div>
+          <div class="mastery-label">自动化</div>
+        </div>
+      </div>
+
+      <!-- Weak Legends -->
+      <div class="section">
+        <div class="section-header">
+          <h3 class="section-title">需要强化</h3>
+          <a class="section-link" data-view="library">查看全部</a>
+        </div>
+        <div id="weakLegends">
+          <div class="empty-hint">暂无弱点图例，开始训练吧！</div>
+        </div>
+      </div>
+
+      <!-- Recommended -->
+      <div class="section">
+        <div class="section-header">
+          <h3 class="section-title">今日推荐</h3>
+        </div>
+        <div class="rec-grid" id="recommended">
+          <div class="empty-hint">加载中...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training View -->
+    <div class="view" id="trainingView">
+      <div class="training-progress">
+        <div class="training-progress-fill" id="trainingProgress"></div>
+      </div>
+      <div id="trainingContent">
+        <!-- Training content will be dynamically loaded -->
+      </div>
+    </div>
+
+    <!-- Library View -->
+    <div class="view" id="libraryView">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="搜索图例编号或名称...">
+      </div>
+      
+      <div class="library-filters">
+        <button class="std-tab active" data-std="all">全部</button>
+        <button class="std-tab" data-std="issprom2019">ISSprOM</button>
+        <button class="std-tab" data-std="isom2017">ISOM</button>
+        <button class="std-tab" data-std="iscd2018">ISCD</button>
+      </div>
+      
+      <div class="category-filter">
+        <select id="categoryFilter">
+          <option value="">所有分类</option>
+          <option value="terrain">地貌</option>
+          <option value="rock">岩壁和石块</option>
+          <option value="water">水体和沼泽</option>
+          <option value="vegetation">植被</option>
+          <option value="manmade">人工地物</option>
+          <option value="technical">技术符号</option>
+          <option value="course">线路设计符号</option>
+          <option value="position">位置信息</option>
+          <option value="special">突出地物</option>
+          <option value="appearance">外观信息</option>
+          <option value="combination">组合</option>
+          <option value="turn">拐弯</option>
+          <option value="flag">点标旗位置</option>
+          <option value="other">其他</option>
+          <option value="mandatory">强制通道</option>
+        </select>
+      </div>
+      
+      <div id="libraryContent">
+        <!-- Library content will be dynamically loaded -->
+      </div>
+    </div>
+
+    <!-- Detail View -->
+    <div class="view" id="detailView">
+      <div id="detailContent">
+        <!-- Detail content will be dynamically loaded -->
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <button class="nav-item active" data-view="home">
+        <span class="nav-icon">🏠</span>
+        <span>首页</span>
+      </button>
+      <button class="nav-item" data-view="training">
+        <span class="nav-icon">🎯</span>
+        <span>训练</span>
+      </button>
+      <button class="nav-item" data-view="library">
+        <span class="nav-icon">📚</span>
+        <span>图例库</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/confusion.js"></script>
+  <script src="js/scheduler.js"></script>
+  <script src="js/training.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Initialize app when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      App.init();
+    });
+  </script>
+</body>
+</html>
