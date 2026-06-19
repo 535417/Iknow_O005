@@ -299,12 +299,11 @@ const App = {
       <div class="question-image">
         <img src="${question.legend.icon}" alt="${question.legend.name}">
       </div>
-      <div class="question-prompt">这个图例是什么？</div>
+      <div class="question-prompt">这个图例的含义是？</div>
       <div class="options-grid">
         ${question.options.map((opt, idx) => `
           <button class="option-btn" data-index="${idx}">
-            <img src="${opt.icon}" alt="${opt.name}">
-            <span>${opt.name}</span>
+            <span class="option-text">${opt.name}</span>
           </button>
         `).join('')}
       </div>
@@ -313,20 +312,20 @@ const App = {
     // Start timer
     this.startChoiceTimer(question.timeLimit);
     
-    // Bind option clicks
-    container.querySelectorAll('.option-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (!Training.currentQuestion?.answered) {
-          Training.currentQuestion.answered = true;
-          this.stopChoiceTimer();
-          
-          const selectedIndex = parseInt(btn.dataset.index);
-          const result = Training.submitChoiceAnswer(selectedIndex, question.correctIndex);
-          
-          // Show feedback
-          this.showChoiceFeedback(selectedIndex, question.correctIndex, result);
-        }
-      });
+    // Bind option clicks using event delegation (more reliable)
+    const optionsGrid = container.querySelector('.options-grid');
+    optionsGrid.addEventListener('click', (e) => {
+      const btn = e.target.closest('.option-btn');
+      if (!btn || Training.currentQuestion?.answered) return;
+      
+      Training.currentQuestion.answered = true;
+      this.stopChoiceTimer();
+      
+      const selectedIndex = parseInt(btn.dataset.index);
+      const result = Training.submitChoiceAnswer(selectedIndex, question.correctIndex);
+      
+      // Show feedback
+      this.showChoiceFeedback(selectedIndex, question.correctIndex, result);
     });
   },
 
