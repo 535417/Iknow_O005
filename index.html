@@ -115,10 +115,10 @@
         <!-- Training content will be dynamically loaded -->
       </div>
     </div>
-    
-      <div id="libraryContent">
-        <!-- Library content will be dynamically loaded -->
-      </div>
+
+    <!-- Library View (iframe) -->
+    <div class="view" id="libraryView">
+      <iframe src="library.html" style="width:100%;height:100vh;border:none;display:block"></iframe>
     </div>
 
     <!-- Detail View -->
@@ -138,10 +138,10 @@
         <span class="nav-icon">🎯</span>
         <span>训练</span>
       </button>
-      <a href="library.html" class="nav-item" style="text-decoration:none">
+      <button class="nav-item" data-view="library">
         <span class="nav-icon">📚</span>
         <span>图例库</span>
-      </a>
+      </button>
     </div>
   </div>
 

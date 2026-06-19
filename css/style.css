@@ -153,6 +153,18 @@ body {
   display: block;
 }
 
+/* Library view - no padding, iframe fills space */
+#libraryView {
+  padding: 0;
+}
+
+#libraryView iframe {
+  width: 100%;
+  height: calc(100vh - var(--header-height) - var(--nav-height) - var(--safe-top) - var(--safe-bottom));
+  border: none;
+  display: block;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
