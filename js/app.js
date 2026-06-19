@@ -302,7 +302,7 @@ const App = {
       <div class="question-prompt">这个图例的含义是？</div>
       <div class="options-grid">
         ${question.options.map((opt, idx) => `
-          <button class="option-btn" data-index="${idx}">
+          <button class="option-btn" onclick="App.selectOption(${idx}, ${question.correctIndex})">
             <span class="option-text">${opt.name}</span>
           </button>
         `).join('')}
@@ -311,22 +311,19 @@ const App = {
     
     // Start timer
     this.startChoiceTimer(question.timeLimit);
+  },
+
+  // Handle option selection
+  selectOption(selectedIndex, correctIndex) {
+    if (Training.currentQuestion?.answered) return;
     
-    // Bind option clicks using event delegation (more reliable)
-    const optionsGrid = container.querySelector('.options-grid');
-    optionsGrid.addEventListener('click', (e) => {
-      const btn = e.target.closest('.option-btn');
-      if (!btn || Training.currentQuestion?.answered) return;
-      
-      Training.currentQuestion.answered = true;
-      this.stopChoiceTimer();
-      
-      const selectedIndex = parseInt(btn.dataset.index);
-      const result = Training.submitChoiceAnswer(selectedIndex, question.correctIndex);
-      
-      // Show feedback
-      this.showChoiceFeedback(selectedIndex, question.correctIndex, result);
-    });
+    Training.currentQuestion.answered = true;
+    this.stopChoiceTimer();
+    
+    const result = Training.submitChoiceAnswer(selectedIndex, correctIndex);
+    
+    // Show feedback
+    this.showChoiceFeedback(selectedIndex, correctIndex, result);
   },
 
   // Start choice timer
