@@ -13,6 +13,9 @@ const App = {
       Storage.initUserState();
     }
     
+    // Update uncertainty based on time since last verification
+    Storage.updateUncertaintyByTime();
+    
     this.bindEvents();
     this.showView('home');
     this.updateHomeStats();
@@ -289,7 +292,7 @@ const App = {
     container.innerHTML = `
       <div class="question-header">
         <span class="question-type">选择题</span>
-        <span class="question-progress">${Training.currentSession.currentIndex + 1}/${Training.currentSession.legends.length}</span>
+        <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
       <div class="question-timer">
         <div class="timer-bar" id="timerBar"></div>
@@ -385,7 +388,7 @@ const App = {
     container.innerHTML = `
       <div class="question-header">
         <span class="question-type">翻转卡</span>
-        <span class="question-progress">${Training.currentSession.currentIndex + 1}/${Training.currentSession.legends.length}</span>
+        <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
       <div class="flip-container">
         <div class="flip-card" id="flipCard">
@@ -437,7 +440,7 @@ const App = {
     container.innerHTML = `
       <div class="question-header">
         <span class="question-type">闪卡</span>
-        <span class="question-progress">${Training.currentSession.currentIndex + 1}/${Training.currentSession.legends.length}</span>
+        <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
       <div class="flash-area" id="flashArea">
         <div class="flash-image" id="flashImage">
@@ -489,11 +492,11 @@ const App = {
     });
   },
 
-  // Update training progress
+  // Update training progress - uses dynamic scheduling
   updateTrainingProgress() {
     if (!Training.currentSession) return;
     
-    const progress = Training.currentSession.currentIndex / Training.currentSession.legends.length * 100;
+    const progress = Training.currentSession.results.length / Training.currentSession.targetCount * 100;
     const progressBar = document.getElementById('trainingProgress');
     if (progressBar) {
       progressBar.style.width = progress + '%';

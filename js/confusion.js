@@ -43,18 +43,21 @@ const ConfusionEngine = {
     legendState.confusion_risk = Math.max(0, (legendState.confusion_risk || 0) * 0.9);
     
     // Update scores based on mode
+    // speed > recognition > recall (product goal)
     switch (mode) {
       case 'choice':
         legendState.recognition_score = Math.min(1, (legendState.recognition_score || 0) + 0.05);
         break;
       case 'flip':
-        legendState.recall_score = Math.min(1, (legendState.recall_score || 0) + 0.08);
+        // Lower gain - flip is for exposing gaps, not fast leveling
+        legendState.recall_score = Math.min(1, (legendState.recall_score || 0) + 0.03);
         break;
       case 'flash':
+        // Higher gain - speed is the ultimate goal
         if (reactionTime < 500) {
-          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.1);
+          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.15);
         } else if (reactionTime < 1200) {
-          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.05);
+          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.08);
         }
         break;
     }
@@ -181,5 +184,44 @@ const ConfusionEngine = {
     return partners
       .sort(() => Math.random() - 0.5)
       .slice(0, count);
+  },
+
+  // Get legends that are most often confused (source side)
+  // These are the legends that need targeted training
+  getMostConfusedSources(limit = 10) {
+    const matrix = Storage.getConfusionMatrix();
+    const sourceConfusion = {};
+    
+    // Aggregate confusion by source legend
+    Object.entries(matrix).forEach(([key, value]) => {
+      const [from, to] = key.split('->');
+      if (!sourceConfusion[from]) {
+        sourceConfusion[from] = { total: 0, targets: {} };
+      }
+      sourceConfusion[from].total += value;
+      sourceConfusion[from].targets[to] = value;
+    });
+    
+    // Convert to array and sort by total confusion
+    return Object.entries(sourceConfusion)
+      .map(([id, data]) => ({
+        id,
+        totalConfusion: data.total,
+        topTarget: Object.entries(data.targets)
+          .sort((a, b) => b[1] - a[1])[0],
+        legend: ALL_LEGENDS.find(l => l.id === id)
+      }))
+      .filter(item => item.legend)
+      .sort((a, b) => b.totalConfusion - a.totalConfusion)
+      .slice(0, limit)
+      .map(item => ({
+        ...item.legend,
+        totalConfusion: item.totalConfusion,
+        topConfusionTarget: item.topTarget ? {
+          id: item.topTarget[0],
+          name: ALL_LEGENDS.find(l => l.id === item.topTarget[0])?.name,
+          strength: item.topTarget[1]
+        } : null
+      }));
   }
 };

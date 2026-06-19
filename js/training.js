@@ -8,20 +8,12 @@ const Training = {
 
   // Start a new training session
   startSession(mode, count = 20) {
-    let legends;
-    
-    if (mode === 'auto') {
-      // Auto mode: use scheduler to get balanced session
-      legends = Scheduler.getSessionLegends(count);
-    } else {
-      // Specific mode: get legends and force this mode
-      legends = Scheduler.getSessionLegends(count);
-    }
-    
+    // Dynamic scheduling: only store mode and count
+    // Legends will be picked one by one using priority
     this.currentSession = {
       mode: mode === 'auto' ? null : mode,
-      legends: legends,
-      currentIndex: 0,
+      targetCount: count,
+      answeredIds: [],  // Track answered legend IDs to avoid repeats
       results: [],
       startTime: Date.now()
     };
@@ -29,14 +21,17 @@ const Training = {
     return this.currentSession;
   },
 
-  // Get next question
+  // Get next question - uses dynamic scheduling
   getNextQuestion() {
     if (!this.currentSession) return null;
-    if (this.currentSession.currentIndex >= this.currentSession.legends.length) {
+    if (this.currentSession.results.length >= this.currentSession.targetCount) {
       return null; // Session complete
     }
     
-    const legend = this.currentSession.legends[this.currentSession.currentIndex];
+    // Dynamic scheduling: pick next legend based on current priority
+    const legend = Scheduler.pickNextLegend(ALL_LEGENDS, this.currentSession.answeredIds);
+    if (!legend) return null; // No more legends available
+    
     const state = Storage.getUserState()[legend.id];
     
     // Determine mode for this question
@@ -114,6 +109,7 @@ const Training = {
     };
     
     this.currentSession.results.push(result);
+    this.currentSession.answeredIds.push(legend.id);
     
     // Update state
     if (isCorrect) {
@@ -181,6 +177,7 @@ const Training = {
     };
     
     this.currentSession.results.push(result);
+    this.currentSession.answeredIds.push(legend.id);
     
     // Update legend state
     const currentState = Storage.getUserState()[legend.id];
@@ -217,6 +214,7 @@ const Training = {
     };
     
     this.currentSession.results.push(result);
+    this.currentSession.answeredIds.push(legend.id);
     
     // Update state
     if (isCorrect) {

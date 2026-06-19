@@ -134,16 +134,27 @@ const Scheduler = {
       .slice(0, count);
   },
 
-  // Get confusion-focused legends
+  // Get confusion-focused legends - uses directional confusion
+  // Training targets the SOURCE legend (the one being confused)
   getConfusionLegends(count) {
+    // First try to get from directional confusion matrix
+    const confusedSources = ConfusionEngine.getMostConfusedSources(count);
+    
+    if (confusedSources.length >= count) {
+      return confusedSources.slice(0, count);
+    }
+    
+    // Fallback to confusion_risk from user state
     const state = Storage.getUserState();
-    return ALL_LEGENDS
+    const fromState = ALL_LEGENDS
       .filter(l => {
         const s = state[l.id];
         return s && s.confusion_risk > 0.3;
       })
       .sort((a, b) => (state[b.id]?.confusion_risk || 0) - (state[a.id]?.confusion_risk || 0))
-      .slice(0, count);
+      .slice(0, count - confusedSources.length);
+    
+    return [...confusedSources, ...fromState];
   },
 
   // Get speed-focused legends

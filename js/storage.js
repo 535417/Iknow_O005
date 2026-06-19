@@ -53,12 +53,17 @@ const Storage = {
     return state[legendId];
   },
 
-  // Calculate mastery level based on scores
+  // Calculate mastery level - speed is the ultimate goal
   calculateMasteryLevel(legendState) {
-    const avg = (legendState.recognition_score + legendState.recall_score + legendState.speed_score) / 3;
-    if (avg >= 0.9) return 'automatic';
-    if (avg >= 0.7) return 'stable';
-    if (avg >= 0.4) return 'learning';
+    // speed权重50%，recognition 30%，recall 20%
+    const weighted = (
+      legendState.speed_score * 0.5 +
+      legendState.recognition_score * 0.3 +
+      legendState.recall_score * 0.2
+    );
+    if (weighted >= 0.85) return 'automatic';
+    if (weighted >= 0.6) return 'stable';
+    if (weighted >= 0.3) return 'learning';
     return 'new';
   },
 
@@ -189,6 +194,38 @@ const Storage = {
       0.25 * (1 - (legendState.speed_score || 0)) +
       0.10 * (1 - (legendState.recall_score || 0))
     );
+  },
+
+  // Update uncertainty based on time since last verification
+  // Philosophy: ability doesn't decay, but system confidence decreases
+  updateUncertaintyByTime() {
+    const state = this.getUserState();
+    const now = Date.now();
+    let updated = false;
+
+    Object.keys(state).forEach(legendId => {
+      const legendState = state[legendId];
+      if (!legendState.last_seen || legendState.total_seen === 0) return;
+
+      const lastSeen = new Date(legendState.last_seen).getTime();
+      const daysSince = (now - lastSeen) / (1000 * 60 * 60 * 24);
+
+      // After 7 days, uncertainty increases
+      if (daysSince > 7) {
+        const uncertaintyIncrease = Math.min(0.5, (daysSince - 7) * 0.015);
+        const newUncertainty = Math.min(0.9, 0.5 + uncertaintyIncrease);
+        
+        if (newUncertainty > legendState.uncertainty) {
+          legendState.uncertainty = newUncertainty;
+          updated = true;
+        }
+      }
+    });
+
+    if (updated) {
+      localStorage.setItem(this.KEYS.USER_STATE, JSON.stringify(state));
+    }
+    return updated;
   },
 
   // Reset all data
