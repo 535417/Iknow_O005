@@ -152,38 +152,77 @@ const ConfusionEngine = {
   },
 
   // Generate confusion-based distractors for choice mode
+  // Generate confusion-based distractors for choice mode
+  // Optimized: if confusion exists, at least 1 confusion distractor
   generateDistractors(correctLegendId, count = 3) {
     const matrix = Storage.getConfusionMatrix();
     const state = Storage.getUserState();
-    
-    // Get confusion partners
-    const partners = this.getConfusionPartners(correctLegendId, 10);
-    
-    // If not enough confusion partners, add random legends from same category
     const correctLegend = ALL_LEGENDS.find(l => l.id === correctLegendId);
-    if (partners.length < count) {
-      const sameCategory = ALL_LEGENDS
-        .filter(l => l.id !== correctLegendId && l.category === correctLegend.category)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, count - partners.length);
-      
-      partners.push(...sameCategory.map(l => ({ ...l, confusionStrength: 0 })));
+    
+    if (!correctLegend) return [];
+    
+    // Get confusion partners (sorted by strength)
+    const confusionPartners = this.getConfusionPartners(correctLegendId, 10);
+    
+    // Get same category legends (excluding correct and already selected)
+    const sameCategory = ALL_LEGENDS
+      .filter(l => l.id !== correctLegendId && l.category === correctLegend.category)
+      .sort(() => Math.random() - 0.5);
+    
+    // Build distractor list
+    const result = [];
+    const usedIds = new Set([correctLegendId]);
+    
+    // Step 1: If confusion exists, add at least 1 confusion distractor
+    if (confusionPartners.length > 0) {
+      const firstConfusion = confusionPartners[0];
+      result.push(firstConfusion);
+      usedIds.add(firstConfusion.id);
     }
     
-    // If still not enough, add random legends
-    if (partners.length < count) {
-      const random = ALL_LEGENDS
-        .filter(l => l.id !== correctLegendId && !partners.find(p => p.id === l.id))
-        .sort(() => Math.random() - 0.5)
-        .slice(0, count - partners.length);
+    // Step 2: Fill remaining with mix of confusion + same category
+    while (result.length < count) {
+      let added = false;
       
-      partners.push(...random.map(l => ({ ...l, confusionStrength: 0 })));
+      // Try to add confusion partner
+      for (const partner of confusionPartners) {
+        if (!usedIds.has(partner.id) && result.length < count) {
+          result.push(partner);
+          usedIds.add(partner.id);
+          added = true;
+          break;
+        }
+      }
+      
+      // If no more confusion partners, add from same category
+      if (!added) {
+        for (const legend of sameCategory) {
+          if (!usedIds.has(legend.id) && result.length < count) {
+            result.push({ ...legend, confusionStrength: 0 });
+            usedIds.add(legend.id);
+            added = true;
+            break;
+          }
+        }
+      }
+      
+      // If still not enough, add random
+      if (!added) {
+        const random = ALL_LEGENDS
+          .filter(l => !usedIds.has(l.id))
+          .sort(() => Math.random() - 0.5);
+        
+        if (random.length > 0) {
+          result.push({ ...random[0], confusionStrength: 0 });
+          usedIds.add(random[0].id);
+        } else {
+          break; // No more legends available
+        }
+      }
     }
     
-    // Shuffle and return requested count
-    return partners
-      .sort(() => Math.random() - 0.5)
-      .slice(0, count);
+    // Shuffle and return
+    return result.sort(() => Math.random() - 0.5).slice(0, count);
   },
 
   // Get legends that are most often confused (source side)

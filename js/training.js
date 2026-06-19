@@ -14,6 +14,7 @@ const Training = {
       mode: mode === 'auto' ? null : mode,
       targetCount: count,
       answeredIds: [],  // Track answered legend IDs to avoid repeats
+      recentIds: [],    // Track recently shown IDs (last 10) for recency penalty
       results: [],
       startTime: Date.now()
     };
@@ -29,7 +30,12 @@ const Training = {
     }
     
     // Dynamic scheduling: pick next legend based on current priority
-    const legend = Scheduler.pickNextLegend(ALL_LEGENDS, this.currentSession.answeredIds);
+    // Pass recentIds for recency penalty
+    const legend = Scheduler.pickNextLegend(
+      ALL_LEGENDS, 
+      this.currentSession.answeredIds,
+      this.currentSession.recentIds
+    );
     if (!legend) return null; // No more legends available
     
     const state = Storage.getUserState()[legend.id];
@@ -111,6 +117,12 @@ const Training = {
     this.currentSession.results.push(result);
     this.currentSession.answeredIds.push(legend.id);
     
+    // Update recentIds for recency penalty (keep last 10)
+    this.currentSession.recentIds.push(legend.id);
+    if (this.currentSession.recentIds.length > 10) {
+      this.currentSession.recentIds.shift();
+    }
+    
     // Update state
     if (isCorrect) {
       ConfusionEngine.updateOnCorrect(legend.id, 'choice', reactionTime);
@@ -179,6 +191,12 @@ const Training = {
     this.currentSession.results.push(result);
     this.currentSession.answeredIds.push(legend.id);
     
+    // Update recentIds for recency penalty (keep last 10)
+    this.currentSession.recentIds.push(legend.id);
+    if (this.currentSession.recentIds.length > 10) {
+      this.currentSession.recentIds.shift();
+    }
+    
     // Update legend state
     const currentState = Storage.getUserState()[legend.id];
     Storage.updateLegendState(legend.id, {
@@ -215,6 +233,12 @@ const Training = {
     
     this.currentSession.results.push(result);
     this.currentSession.answeredIds.push(legend.id);
+    
+    // Update recentIds for recency penalty (keep last 10)
+    this.currentSession.recentIds.push(legend.id);
+    if (this.currentSession.recentIds.length > 10) {
+      this.currentSession.recentIds.shift();
+    }
     
     // Update state
     if (isCorrect) {

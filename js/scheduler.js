@@ -14,16 +14,33 @@ const Scheduler = {
   },
 
   // Pick next legend using weighted random from top-K
-  pickNextLegend(legends, excludeIds = []) {
+  // recentIds: array of recently shown legend IDs (for recency penalty)
+  pickNextLegend(legends, excludeIds = [], recentIds = []) {
     const state = Storage.getUserState();
     
     // Calculate priority for each legend
     const scored = legends
       .filter(l => !excludeIds.includes(l.id))
-      .map(legend => ({
-        ...legend,
-        priority: this.calculatePriority(state[legend.id])
-      }));
+      .map(legend => {
+        let priority = this.calculatePriority(state[legend.id]);
+        
+        // Recency penalty: reduce priority for recently shown legends
+        // This prevents A→B→A→B consecutive bombardment
+        const recentIndex = recentIds.indexOf(legend.id);
+        if (recentIndex !== -1) {
+          // More recent = stronger penalty
+          // Last 3 shown: 70% reduction, 4-6 shown: 40% reduction, 7-10: 20% reduction
+          if (recentIndex >= recentIds.length - 3) {
+            priority *= 0.3; // Last 3: 70% reduction
+          } else if (recentIndex >= recentIds.length - 6) {
+            priority *= 0.6; // 4-6: 40% reduction
+          } else {
+            priority *= 0.8; // 7-10: 20% reduction
+          }
+        }
+        
+        return { ...legend, priority };
+      });
     
     // Sort by priority (highest first)
     scored.sort((a, b) => b.priority - a.priority);

@@ -22,62 +22,34 @@
 
     <!-- Home View -->
     <div class="view active" id="homeView">
-      <!-- Stats Grid -->
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-value" id="totalSeen">0</div>
-          <div class="stat-label">已学习</div>
+      <!-- Primary Action: Start Training -->
+      <div class="hero-action">
+        <button class="btn-start-training" data-view="training">
+          <span class="hero-icon">🎯</span>
+          <span class="hero-text">开始今日训练</span>
+          <span class="hero-sub" id="heroSub">智能推荐 20 题</span>
+        </button>
+      </div>
+
+      <!-- Quick Stats (compact) -->
+      <div class="quick-stats">
+        <div class="quick-stat">
+          <span class="qs-value" id="todayCount">0</span>
+          <span class="qs-label">今日</span>
         </div>
-        <div class="stat-card">
-          <div class="stat-value" id="avgSpeed">0%</div>
-          <div class="stat-label">秒认率</div>
+        <div class="quick-stat-divider"></div>
+        <div class="quick-stat">
+          <span class="qs-value" id="totalSeen">0</span>
+          <span class="qs-label">已学</span>
         </div>
-        <div class="stat-card">
-          <div class="stat-value" id="todayCount">0</div>
-          <div class="stat-label">今日练习</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">390</div>
-          <div class="stat-label">总图例</div>
+        <div class="quick-stat-divider"></div>
+        <div class="quick-stat">
+          <span class="qs-value" id="avgSpeed">0%</span>
+          <span class="qs-label">秒认率</span>
         </div>
       </div>
 
-      <!-- Progress -->
-      <div class="progress-card">
-        <div class="progress-header">
-          <h3>学习进度</h3>
-          <span id="progressText">0%</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress-fill" id="progressBar" style="width: 0%"></div>
-        </div>
-      </div>
-
-      <!-- Mastery Levels -->
-      <div class="mastery-grid">
-        <div class="mastery-item">
-          <div class="mastery-dot new"></div>
-          <div class="mastery-count" id="newCount">390</div>
-          <div class="mastery-label">未学习</div>
-        </div>
-        <div class="mastery-item">
-          <div class="mastery-dot learning"></div>
-          <div class="mastery-count" id="learningCount">0</div>
-          <div class="mastery-label">学习中</div>
-        </div>
-        <div class="mastery-item">
-          <div class="mastery-dot stable"></div>
-          <div class="mastery-count" id="stableCount">0</div>
-          <div class="mastery-label">稳定</div>
-        </div>
-        <div class="mastery-item">
-          <div class="mastery-dot automatic"></div>
-          <div class="mastery-count" id="automaticCount">0</div>
-          <div class="mastery-label">自动化</div>
-        </div>
-      </div>
-
-      <!-- Weak Legends -->
+      <!-- Weak Legends (actionable) -->
       <div class="section">
         <div class="section-header">
           <h3 class="section-title">需要强化</h3>
@@ -88,7 +60,42 @@
         </div>
       </div>
 
-      <!-- Recommended -->
+      <!-- Progress (collapsible) -->
+      <details class="progress-details">
+        <summary class="progress-summary">
+          <span>学习进度</span>
+          <span id="progressText">0%</span>
+        </summary>
+        <div class="progress-body">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+          </div>
+          <div class="mastery-grid">
+            <div class="mastery-item">
+              <div class="mastery-dot new"></div>
+              <div class="mastery-count" id="newCount">390</div>
+              <div class="mastery-label">未学习</div>
+            </div>
+            <div class="mastery-item">
+              <div class="mastery-dot learning"></div>
+              <div class="mastery-count" id="learningCount">0</div>
+              <div class="mastery-label">学习中</div>
+            </div>
+            <div class="mastery-item">
+              <div class="mastery-dot stable"></div>
+              <div class="mastery-count" id="stableCount">0</div>
+              <div class="mastery-label">稳定</div>
+            </div>
+            <div class="mastery-item">
+              <div class="mastery-dot automatic"></div>
+              <div class="mastery-count" id="automaticCount">0</div>
+              <div class="mastery-label">自动化</div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Recommended (compact) -->
       <div class="section">
         <div class="section-header">
           <h3 class="section-title">今日推荐</h3>
