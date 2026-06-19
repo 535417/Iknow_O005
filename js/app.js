@@ -38,23 +38,6 @@ const App = {
         this.searchLegends(e.target.value);
       });
     }
-    
-    // Standard filter tabs
-    document.querySelectorAll('.std-tab').forEach(tab => {
-      tab.addEventListener('click', (e) => {
-        document.querySelectorAll('.std-tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        this.filterByStandard(tab.dataset.std);
-      });
-    });
-    
-    // Category filter
-    const categoryFilter = document.getElementById('categoryFilter');
-    if (categoryFilter) {
-      categoryFilter.addEventListener('change', (e) => {
-        this.filterByCategory(e.target.value);
-      });
-    }
   },
 
   // Show view
@@ -553,28 +536,169 @@ const App = {
     `;
   },
 
-  // Render library
+  // Library collapse state
+  libraryCollapseState: {},
+
+  // Render library - O-legend style layout
   renderLibrary() {
     const container = document.getElementById('libraryContent');
-    const state = Storage.getUserState();
     
-    container.innerHTML = ALL_LEGENDS.map(legend => `
-      <div class="legend-card" data-id="${legend.id}" data-std="${legend.standard}" data-cat="${legend.category}">
+    // Group by standard
+    const groups = { issprom2019: [], isom2017: [], iscd2018: [] };
+    ALL_LEGENDS.forEach(legend => {
+      if (groups[legend.standard]) {
+        groups[legend.standard].push(legend);
+      }
+    });
+    
+    const stdOrder = ['issprom2019', 'isom2017', 'iscd2018'];
+    const stdLabels = {
+      issprom2019: 'ISSprOM 2019-2',
+      isom2017: 'ISOM 2017-2',
+      iscd2018: 'ISCD 2018'
+    };
+    
+    const catMap = {
+      issprom2019: {
+        1: '地貌', 2: '岩壁和石块', 3: '水体和沼泽', 4: '植被', 
+        5: '人工地物', 6: '技术符号', 7: '线路设计符号'
+      },
+      isom2017: {
+        1: '地貌', 2: '岩壁和石块', 3: '水体和沼泽', 4: '植被', 
+        5: '人工地物', 6: '技术符号', 7: '线路设计符号'
+      },
+      iscd2018: {
+        0: '位置信息', 1: '地貌', 2: '岩壁和石块', 3: '水体和沼泽', 
+        4: '植被', 5: '人工地物', 6: '突出地物', 8: '外观信息',
+        10: '组合', 11: '拐弯', 12: '点标旗位置', 13: '其他', 15: '强制通道'
+      }
+    };
+    
+    function getCategoryForLegend(legend) {
+      const num = parseFloat(legend.code);
+      if (legend.standard === 'iscd2018') {
+        if (num === 0) return 0;
+        if (num >= 1 && num < 2) return 1;
+        if (num >= 2 && num < 3) return 2;
+        if (num >= 3 && num < 4) return 3;
+        if (num >= 4 && num < 5) return 4;
+        if (num >= 5 && num < 6) return 5;
+        if (num >= 6 && num < 7) return 6;
+        if (num >= 8 && num < 9) return 8;
+        if (num >= 10 && num < 11) return 10;
+        if (num >= 11 && num < 12) return 11;
+        if (num >= 12 && num < 13) return 12;
+        if (num >= 13 && num < 14) return 13;
+        if (num >= 15) return 15;
+        return -1;
+      }
+      if (num >= 100 && num < 200) return 1;
+      if (num >= 200 && num < 300) return 2;
+      if (num >= 300 && num < 400) return 3;
+      if (num >= 400 && num < 500) return 4;
+      if (num >= 500 && num < 600) return 5;
+      if (num >= 600 && num < 700) return 6;
+      if (num >= 700) return 7;
+      return -1;
+    }
+    
+    function renderCard(legend) {
+      return `<div class="legend-card" data-id="${legend.id}" data-std="${legend.standard}">
         <div class="legend-icon">
           <img src="${legend.icon}" alt="${legend.name}" loading="lazy">
         </div>
         <div class="legend-info">
           <div class="legend-code">${legend.code}</div>
           <div class="legend-name">${legend.name}</div>
-          <div class="legend-en">${legend.name_en}</div>
+          ${legend.name_en ? `<div class="legend-en">${legend.name_en}</div>` : ''}
         </div>
-        <div class="legend-status">
-          <div class="status-dot ${state[legend.id]?.mastery_level || 'new'}"></div>
-        </div>
-      </div>
-    `).join('');
+      </div>`;
+    }
     
-    // Bind clicks
+    let html = '';
+    
+    stdOrder.forEach(std => {
+      const stdItems = groups[std];
+      if (!stdItems || stdItems.length === 0) return;
+      
+      // Check if this standard group is collapsed
+      const isStdCollapsed = this.libraryCollapseState[std] !== undefined 
+        ? this.libraryCollapseState[std] 
+        : (std !== 'issprom2019'); // First one (ISSprOM) expanded by default
+      
+      const stdCollapsedCls = isStdCollapsed ? ' collapsed' : '';
+      
+      html += `<div class="group-header${stdCollapsedCls}" data-std-group="${std}">
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span>${stdLabels[std]} <small style="opacity:.65;font-size:.68rem">· ${stdItems.length} 项</small></span>
+      </div>`;
+      
+      html += `<div class="group-items${stdCollapsedCls}" data-std-group="${std}">`;
+      
+      // Group by category within standard
+      const categories = {};
+      stdItems.forEach(item => {
+        const cat = getCategoryForLegend(item);
+        if (!categories[cat]) categories[cat] = [];
+        categories[cat].push(item);
+      });
+      
+      const catKeys = Object.keys(categories).sort((a, b) => a - b);
+      const cats = catMap[std] || {};
+      
+      catKeys.forEach(catId => {
+        const catItems = categories[catId];
+        const catName = cats[catId] || '其他';
+        
+        // Check if this category is collapsed
+        const catKey = `${std}_${catId}`;
+        const isCatCollapsed = this.libraryCollapseState[catKey] !== undefined 
+          ? this.libraryCollapseState[catKey] 
+          : true; // Categories collapsed by default
+        
+        const catCollapsedCls = isCatCollapsed ? ' collapsed' : '';
+        
+        html += `<div class="group-header cat-header${catCollapsedCls}" data-cat-group="${catKey}">
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          <span>${catName} <small style="opacity:.65;font-size:.68rem">· ${catItems.length} 项</small></span>
+        </div>`;
+        
+        html += `<div class="group-items cat-items${catCollapsedCls}" data-cat-group="${catKey}">`;
+        html += catItems.map(renderCard).join('');
+        html += '</div>';
+      });
+      
+      html += '</div>';
+    });
+    
+    container.innerHTML = html;
+    
+    // Bind event delegation for collapse/expand
+    container.addEventListener('click', (e) => {
+      const header = e.target.closest('.group-header');
+      if (!header) return;
+      
+      const stdGroup = header.dataset.stdGroup;
+      const catGroup = header.dataset.catGroup;
+      
+      if (stdGroup) {
+        // Toggle standard group
+        this.libraryCollapseState[stdGroup] = !this.libraryCollapseState[stdGroup];
+        const isCollapsed = this.libraryCollapseState[stdGroup];
+        header.classList.toggle('collapsed', isCollapsed);
+        const items = container.querySelector(`.group-items[data-std-group="${stdGroup}"]`);
+        if (items) items.classList.toggle('collapsed', isCollapsed);
+      } else if (catGroup) {
+        // Toggle category group
+        this.libraryCollapseState[catGroup] = !this.libraryCollapseState[catGroup];
+        const isCollapsed = this.libraryCollapseState[catGroup];
+        header.classList.toggle('collapsed', isCollapsed);
+        const items = container.querySelector(`.group-items[data-cat-group="${catGroup}"]`);
+        if (items) items.classList.toggle('collapsed', isCollapsed);
+      }
+    });
+    
+    // Bind card clicks
     container.querySelectorAll('.legend-card').forEach(card => {
       card.addEventListener('click', () => {
         this.showLegendDetail(card.dataset.id);
@@ -585,44 +709,84 @@ const App = {
   // Search legends
   searchLegends(query) {
     const q = query.toLowerCase().trim();
-    const cards = document.querySelectorAll('.legend-card');
     
-    cards.forEach(card => {
-      const id = card.dataset.id;
-      const legend = ALL_LEGENDS.find(l => l.id === id);
-      if (!legend) return;
-      
-      const match = !q || 
-        legend.code.toLowerCase().includes(q) ||
+    if (!q) {
+      // Reset to normal view
+      this.renderLibrary();
+      return;
+    }
+    
+    // Search mode: show matching items in all standards
+    const results = { issprom2019: [], isom2017: [], iscd2018: [] };
+    ALL_LEGENDS.forEach(legend => {
+      const match = legend.code.toLowerCase().includes(q) ||
         legend.name.toLowerCase().includes(q) ||
         legend.name_en.toLowerCase().includes(q);
       
-      card.style.display = match ? 'flex' : 'none';
+      if (match && results[legend.standard]) {
+        results[legend.standard].push(legend);
+      }
     });
+    
+    const container = document.getElementById('libraryContent');
+    const stdLabels = {
+      issprom2019: 'ISSprOM 2019-2',
+      isom2017: 'ISOM 2017-2',
+      iscd2018: 'ISCD 2018'
+    };
+    
+    const stdOrder = ['issprom2019', 'isom2017', 'iscd2018'];
+    let html = '';
+    let totalResults = 0;
+    
+    stdOrder.forEach(std => {
+      const items = results[std];
+      if (items.length === 0) return;
+      totalResults += items.length;
+      
+      html += `<div class="group-header" data-std-group="${std}">
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span>${stdLabels[std]} <small style="opacity:.65;font-size:.68rem">· ${items.length} 个结果</small></span>
+      </div>`;
+      
+      html += `<div class="group-items" data-std-group="${std}">`;
+      html += items.map(legend => `
+        <div class="legend-card" data-id="${legend.id}" data-std="${legend.standard}">
+          <div class="legend-icon">
+            <img src="${legend.icon}" alt="${legend.name}" loading="lazy">
+          </div>
+          <div class="legend-info">
+            <div class="legend-code">${legend.code}</div>
+            <div class="legend-name">${legend.name}</div>
+            ${legend.name_en ? `<div class="legend-en">${legend.name_en}</div>` : ''}
+          </div>
+        </div>
+      `).join('');
+      html += '</div>';
+    });
+    
+    if (totalResults === 0) {
+      container.innerHTML = '<div class="empty-hint">没有找到匹配的图例</div>';
+    } else {
+      container.innerHTML = html;
+      
+      // Bind clicks
+      container.querySelectorAll('.legend-card').forEach(card => {
+        card.addEventListener('click', () => {
+          this.showLegendDetail(card.dataset.id);
+        });
+      });
+    }
   },
 
-  // Filter by standard
+  // Filter by standard (kept for compatibility but not used in new UI)
   filterByStandard(std) {
-    const cards = document.querySelectorAll('.legend-card');
-    cards.forEach(card => {
-      if (std === 'all' || card.dataset.std === std) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+    // No longer needed - standards are grouped in the main view
   },
 
-  // Filter by category
+  // Filter by category (kept for compatibility but not used in new UI)
   filterByCategory(category) {
-    const cards = document.querySelectorAll('.legend-card');
-    cards.forEach(card => {
-      if (!category || card.dataset.cat === category) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+    // No longer needed - categories are grouped within standards
   },
 
   // Show legend detail
