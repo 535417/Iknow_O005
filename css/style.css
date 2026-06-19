@@ -21,12 +21,17 @@
   --warning: #f57c00;
   --radius: 16px;
   --shadow: 0 4px 20px rgba(45, 106, 79, 0.08);
+  --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --header-height: 44px;
+  --nav-height: 44px;
+  --vh: 1vh; /* Will be set by JS */
 }
 
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -34,7 +39,7 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: -webkit-fill-available;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -44,35 +49,44 @@ body {
   max-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
   position: relative;
-  padding-bottom: calc(50px + var(--safe-bottom));
+  padding-top: calc(var(--header-height) + var(--safe-top));
+  padding-bottom: calc(var(--nav-height) + var(--safe-bottom));
 }
 
 /* ===== Header ===== */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  background: rgba(240, 246, 243, 0.95);
+  background: rgba(240, 246, 243, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 6px 16px;
+  padding-top: calc(6px + var(--safe-top));
   text-align: center;
-  padding-top: max(6px, env(safe-area-inset-top));
+  height: calc(var(--header-height) + var(--safe-top));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header h1 {
   font-size: 1rem;
   font-weight: 700;
   color: var(--primary);
+  line-height: 1.2;
 }
 
 .header .subtitle {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   color: var(--text-secondary);
-  margin-top: 1px;
+  line-height: 1;
 }
 
 /* ===== Bottom Navigation ===== */
@@ -88,18 +102,20 @@ body {
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-around;
-  padding: 4px 0;
-  padding-bottom: max(4px, var(--safe-bottom));
+  align-items: center;
+  height: calc(var(--nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
 }
 
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  padding: 4px 20px;
-  min-width: 64px;
-  min-height: 40px;
+  justify-content: center;
+  gap: 1px;
+  padding: 4px 16px;
+  min-width: 56px;
+  min-height: var(--nav-height);
   border: none;
   background: none;
   color: var(--text-secondary);

@@ -187,6 +187,21 @@
   <script src="js/training.js"></script>
   <script src="js/app.js"></script>
   <script>
+    // Fix mobile viewport height (handles browser chrome resize)
+    function setVH() {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    
+    // Set on load
+    setVH();
+    
+    // Set on resize (handles browser chrome show/hide)
+    window.addEventListener('resize', setVH);
+    window.addEventListener('orientationchange', () => {
+      setTimeout(setVH, 100);
+    });
+    
     // Initialize app when DOM is ready
     document.addEventListener('DOMContentLoaded', () => {
       App.init();
