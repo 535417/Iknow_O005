@@ -60,13 +60,29 @@ const App = {
       item.classList.toggle('active', item.dataset.view === view);
     });
     
+    // Update header title based on view
+    const headerTitle = document.getElementById('headerTitle');
+    const headerSubtitle = document.getElementById('headerSubtitle');
+    
+    switch (view) {
+      case 'home':
+      case 'training':
+        headerTitle.textContent = '定向越野图例训练';
+        headerSubtitle.textContent = 'Orienteering Legend Training System';
+        break;
+      case 'library':
+        headerTitle.textContent = '🗺️ 定向地图图例库';
+        headerSubtitle.textContent = 'Orienteering Map Legend Reference';
+        break;
+    }
+    
     // Load view content
     switch (view) {
       case 'home':
         this.updateHomeStats();
         break;
       case 'library':
-        this.renderLibrary();
+        // iframe loaded, no need to render
         break;
       case 'training':
         this.showTrainingSetup();
