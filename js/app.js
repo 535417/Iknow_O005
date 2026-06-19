@@ -362,7 +362,8 @@ const App = {
 
   // Show choice feedback
   showChoiceFeedback(selectedIndex, correctIndex, result) {
-    const options = document.querySelectorAll('.option-btn');
+    const container = document.getElementById('trainingContent');
+    const options = container.querySelectorAll('.option-btn');
     
     options.forEach((btn, idx) => {
       if (idx === correctIndex) {
@@ -375,7 +376,7 @@ const App = {
     
     // Auto advance after delay
     setTimeout(() => {
-      this.showTrainingQuestion();
+      App.showTrainingQuestion();
     }, 1500);
   },
 
