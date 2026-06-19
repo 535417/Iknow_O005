@@ -148,7 +148,7 @@ const Training = {
     } else {
       ConfusionEngine.updateOnMistake(
         legend.id,
-        this.currentQuestion.options[selectedIndex].id,
+        this.currentQuestion.options?.[selectedIndex]?.id,
         'choice',
         reactionTime
       );
@@ -298,10 +298,7 @@ const Training = {
     }
     
     stats.mode_counts[mode] = (stats.mode_counts[mode] || 0) + 1;
-    // Accumulate time spent (not overwrite)
-    const currentSessionTime = Date.now() - this.currentSession.startTime;
-    stats.time_spent = (stats.time_spent || 0) + (currentSessionTime / this.currentSession.results.length);
-    
+
     // Add legend to seen list
     const legendId = this.currentQuestion?.legend?.id;
     if (legendId && !stats.legends_seen.includes(legendId)) {
@@ -338,6 +335,12 @@ const Training = {
   // End current session
   endSession() {
     const summary = this.getSessionSummary();
+    // Accumulate session duration into daily stats (once, correctly)
+    if (summary) {
+      const { stats } = Storage.getDailyStats();
+      stats.time_spent = (stats.time_spent || 0) + summary.duration;
+      Storage.updateDailyStats(stats);
+    }
     this.currentSession = null;
     this.currentQuestion = null;
     return summary;

@@ -178,7 +178,7 @@ const Storage = {
       .map(legend => ({
         ...legend,
         state: state[legend.id],
-        priority: this.calculatePriority(state[legend.id])
+        priority: Scheduler.calculatePriority(state[legend.id])
       }))
       .filter(l => !stats.legends_seen.includes(l.id))
       .sort((a, b) => b.priority - a.priority)

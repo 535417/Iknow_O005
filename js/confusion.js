@@ -171,9 +171,9 @@ const ConfusionEngine = {
     const confusionPartners = this.getConfusionPartners(correctLegendId, 10);
     
     // Get same category legends (excluding correct and already selected)
-    const sameCategory = ALL_LEGENDS
-      .filter(l => l.id !== correctLegendId && l.category === correctLegend.category)
-      .sort(() => Math.random() - 0.5);
+    const sameCategory = shuffleConfusion(
+      ALL_LEGENDS.filter(l => l.id !== correctLegendId && l.category === correctLegend.category)
+    );
     
     // Build distractor list
     const result = [];
@@ -214,9 +214,9 @@ const ConfusionEngine = {
       
       // If still not enough, add random
       if (!added) {
-        const random = ALL_LEGENDS
-          .filter(l => !usedIds.has(l.id))
-          .sort(() => Math.random() - 0.5);
+        const random = shuffleConfusion(
+          ALL_LEGENDS.filter(l => !usedIds.has(l.id))
+        );
         
         if (random.length > 0) {
           result.push({ ...random[0], confusionStrength: 0 });
