@@ -1,5 +1,15 @@
 // Priority scheduling algorithm for legend selection
 
+// Fisher-Yates shuffle (unbiased)
+function shuffleScheduler(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 const Scheduler = {
   // Calculate priority score for a legend
   calculatePriority(legendState) {
@@ -129,10 +139,9 @@ const Scheduler = {
     
     // Fill remaining slots if needed
     if (session.length < count) {
-      const remaining = ALL_LEGENDS
-        .filter(l => !seen.has(l.id) && !stats.legends_seen.includes(l.id))
-        .sort(() => Math.random() - 0.5)
-        .slice(0, count - session.length);
+      const remaining = shuffleScheduler(
+        ALL_LEGENDS.filter(l => !seen.has(l.id) && !stats.legends_seen.includes(l.id))
+      ).slice(0, count - session.length);
       session.push(...remaining);
     }
     
@@ -142,13 +151,12 @@ const Scheduler = {
   // Get warmup legends (already somewhat known)
   getWarmupLegends(count) {
     const state = Storage.getUserState();
-    return ALL_LEGENDS
-      .filter(l => {
+    return shuffleScheduler(
+      ALL_LEGENDS.filter(l => {
         const s = state[l.id];
         return s && s.total_seen > 2 && s.mastery_level !== 'new';
       })
-      .sort(() => Math.random() - 0.5)
-      .slice(0, count);
+    ).slice(0, count);
   },
 
   // Get confusion-focused legends - uses directional confusion

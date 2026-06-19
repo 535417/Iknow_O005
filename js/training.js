@@ -1,5 +1,15 @@
 // Training modes: choice, flip, flash
 
+// Fisher-Yates shuffle (unbiased)
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 const Training = {
   currentSession: null,
   currentQuestion: null,
@@ -43,30 +53,39 @@ const Training = {
     // Determine mode for this question
     const mode = this.currentSession.mode || Scheduler.selectMode(state);
     
+    // Generate question based on mode
+    let questionData;
+    switch (mode) {
+      case 'choice':
+        questionData = this.generateChoiceQuestion(legend);
+        break;
+      case 'flip':
+        questionData = this.generateFlipQuestion(legend);
+        break;
+      case 'flash':
+        questionData = this.generateFlashQuestion(legend);
+        break;
+      default:
+        questionData = this.generateChoiceQuestion(legend);
+    }
+    
+    // Store options for choice questions
     this.currentQuestion = {
       legend: legend,
       mode: mode,
+      options: questionData.options || null,
+      correctIndex: questionData.correctIndex,
       startTime: Date.now(),
       answered: false
     };
     
-    // Generate question based on mode
-    switch (mode) {
-      case 'choice':
-        return this.generateChoiceQuestion(legend);
-      case 'flip':
-        return this.generateFlipQuestion(legend);
-      case 'flash':
-        return this.generateFlashQuestion(legend);
-      default:
-        return this.generateChoiceQuestion(legend);
-    }
+    return questionData;
   },
 
   // Generate choice question (4 options)
   generateChoiceQuestion(legend) {
     const distractors = ConfusionEngine.generateDistractors(legend.id, 3);
-    const options = [legend, ...distractors].sort(() => Math.random() - 0.5);
+    const options = shuffle([legend, ...distractors]);
     
     return {
       type: 'choice',
@@ -168,11 +187,12 @@ const Training = {
         ConfusionEngine.updateOnCorrect(legend.id, 'flip', reactionTime);
         break;
       case 'unsure':
-        // Partial credit
+        // Weak positive evidence - partial recall
         const state = Storage.getUserState()[legend.id];
         Storage.updateLegendState(legend.id, {
           recall_score: Math.min(1, (state.recall_score || 0) + 0.02),
-          uncertainty: Math.min(1, (state.uncertainty || 0) + 0.02)
+          confusion_risk: Math.min(1, (state.confusion_risk || 0) + 0.02) // Slight confusion increase
+          // Don't increase uncertainty - user partially knows the answer
         });
         break;
       case 'wrong':
@@ -278,7 +298,9 @@ const Training = {
     }
     
     stats.mode_counts[mode] = (stats.mode_counts[mode] || 0) + 1;
-    stats.time_spent = Date.now() - this.currentSession.startTime;
+    // Accumulate time spent (not overwrite)
+    const currentSessionTime = Date.now() - this.currentSession.startTime;
+    stats.time_spent = (stats.time_spent || 0) + (currentSessionTime / this.currentSession.results.length);
     
     // Add legend to seen list
     const legendId = this.currentQuestion?.legend?.id;

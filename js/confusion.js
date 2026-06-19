@@ -1,5 +1,15 @@
 // Confusion matrix engine for tracking legend confusion relationships
 
+// Fisher-Yates shuffle (unbiased)
+function shuffleConfusion(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 const ConfusionEngine = {
   // Update confusion when user makes a mistake
   updateOnMistake(correctLegendId, selectedLegendId, mode, reactionTime) {
@@ -15,101 +25,97 @@ const ConfusionEngine = {
     // Update confusion matrix
     Storage.updateConfusionMatrix(correctLegendId, selectedLegendId, weight);
     
-    // Update user state for both legends
-    const state = Storage.getUserState();
-    
     // Update correct legend - increase confusion risk
-    if (state[correctLegendId]) {
-      state[correctLegendId].confusion_risk = Math.min(1, (state[correctLegendId].confusion_risk || 0) + 0.1);
-      state[correctLegendId].uncertainty = Math.min(1, (state[correctLegendId].uncertainty || 0) + 0.05);
+    const correctState = Storage.getUserState()[correctLegendId];
+    if (correctState) {
+      Storage.updateLegendState(correctLegendId, {
+        confusion_risk: Math.min(1, (correctState.confusion_risk || 0) + 0.1),
+        uncertainty: Math.min(1, (correctState.uncertainty || 0) + 0.05)
+      });
     }
     
-    // Update selected (wrong) legend - it's being confused with correct one
-    if (state[selectedLegendId]) {
-      state[selectedLegendId].confusion_risk = Math.min(1, (state[selectedLegendId].confusion_risk || 0) + 0.05);
+    // Update selected (wrong) legend
+    const selectedState = Storage.getUserState()[selectedLegendId];
+    if (selectedState) {
+      Storage.updateLegendState(selectedLegendId, {
+        confusion_risk: Math.min(1, (selectedState.confusion_risk || 0) + 0.05)
+      });
     }
-    
-    localStorage.setItem(Storage.KEYS.USER_STATE, JSON.stringify(state));
   },
 
   // Update when user answers correctly
   updateOnCorrect(legendId, mode, reactionTime) {
-    const state = Storage.getUserState();
-    if (!state[legendId]) return;
+    const state = Storage.getUserState()[legendId];
+    if (!state) return;
     
-    const legendState = state[legendId];
+    const updates = {};
     
     // Decrease confusion risk on correct answer
-    legendState.confusion_risk = Math.max(0, (legendState.confusion_risk || 0) * 0.9);
+    updates.confusion_risk = Math.max(0, (state.confusion_risk || 0) * 0.9);
     
     // Update scores based on mode
-    // speed > recognition > recall (product goal)
     switch (mode) {
       case 'choice':
-        legendState.recognition_score = Math.min(1, (legendState.recognition_score || 0) + 0.05);
+        updates.recognition_score = Math.min(1, (state.recognition_score || 0) + 0.05);
         break;
       case 'flip':
-        // Lower gain - flip is for exposing gaps, not fast leveling
-        legendState.recall_score = Math.min(1, (legendState.recall_score || 0) + 0.03);
+        updates.recall_score = Math.min(1, (state.recall_score || 0) + 0.03);
         break;
       case 'flash':
-        // Higher gain - speed is the ultimate goal
         if (reactionTime < 500) {
-          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.15);
+          updates.speed_score = Math.min(1, (state.speed_score || 0) + 0.15);
         } else if (reactionTime < 1200) {
-          legendState.speed_score = Math.min(1, (legendState.speed_score || 0) + 0.08);
+          updates.speed_score = Math.min(1, (state.speed_score || 0) + 0.08);
         }
         break;
     }
     
     // Decrease uncertainty
-    legendState.uncertainty = Math.max(0, (legendState.uncertainty || 0) * 0.95);
+    updates.uncertainty = Math.max(0, (state.uncertainty || 0) * 0.95);
     
     // Update streak
     const today = new Date().toISOString().split('T')[0];
-    const lastCorrect = legendState.last_correct ? new Date(legendState.last_correct).toISOString().split('T')[0] : null;
+    const lastCorrect = state.last_correct ? new Date(state.last_correct).toISOString().split('T')[0] : null;
     
     if (lastCorrect === today) {
       // Already correct today, don't increment streak
     } else if (lastCorrect === new Date(Date.now() - 86400000).toISOString().split('T')[0]) {
-      legendState.streak = (legendState.streak || 0) + 1;
+      updates.streak = (state.streak || 0) + 1;
     } else {
-      legendState.streak = 1;
+      updates.streak = 1;
     }
     
-    legendState.last_correct = new Date().toISOString();
-    legendState.total_correct = (legendState.total_correct || 0) + 1;
+    updates.last_correct = new Date().toISOString();
+    updates.total_correct = (state.total_correct || 0) + 1;
     
-    localStorage.setItem(Storage.KEYS.USER_STATE, JSON.stringify(state));
+    Storage.updateLegendState(legendId, updates);
   },
 
   // Update when user answers wrong (no specific target)
   updateOnWrong(legendId, mode) {
-    const state = Storage.getUserState();
-    if (!state[legendId]) return;
+    const state = Storage.getUserState()[legendId];
+    if (!state) return;
     
-    const legendState = state[legendId];
-    
-    // Increase uncertainty and confusion risk
-    legendState.uncertainty = Math.min(1, (legendState.uncertainty || 0) + 0.05);
-    legendState.confusion_risk = Math.min(1, (legendState.confusion_risk || 0) + 0.1);
+    const updates = {
+      uncertainty: Math.min(1, (state.uncertainty || 0) + 0.05),
+      confusion_risk: Math.min(1, (state.confusion_risk || 0) + 0.1),
+      streak: 0
+    };
     
     // Decrease scores slightly
     switch (mode) {
       case 'choice':
-        legendState.recognition_score = Math.max(0, (legendState.recognition_score || 0) - 0.03);
+        updates.recognition_score = Math.max(0, (state.recognition_score || 0) - 0.03);
         break;
       case 'flip':
-        legendState.recall_score = Math.max(0, (legendState.recall_score || 0) - 0.05);
+        updates.recall_score = Math.max(0, (state.recall_score || 0) - 0.05);
         break;
       case 'flash':
-        legendState.speed_score = Math.max(0, (legendState.speed_score || 0) - 0.05);
+        updates.speed_score = Math.max(0, (state.speed_score || 0) - 0.05);
         break;
     }
     
-    legendState.streak = 0;
-    
-    localStorage.setItem(Storage.KEYS.USER_STATE, JSON.stringify(state));
+    Storage.updateLegendState(legendId, updates);
   },
 
   // Get confusion partners for a legend
@@ -222,7 +228,7 @@ const ConfusionEngine = {
     }
     
     // Shuffle and return
-    return result.sort(() => Math.random() - 0.5).slice(0, count);
+    return shuffleConfusion(result).slice(0, count);
   },
 
   // Get legends that are most often confused (source side)

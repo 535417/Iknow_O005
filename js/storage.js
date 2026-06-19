@@ -185,17 +185,6 @@ const Storage = {
       .slice(0, limit);
   },
 
-  // Calculate priority score for scheduling
-  calculatePriority(legendState) {
-    if (!legendState) return 1;
-    return (
-      0.35 * (legendState.confusion_risk || 0) +
-      0.30 * (legendState.uncertainty || 0.5) +
-      0.25 * (1 - (legendState.speed_score || 0)) +
-      0.10 * (1 - (legendState.recall_score || 0))
-    );
-  },
-
   // Update uncertainty based on time since last verification
   // Philosophy: ability doesn't decay, but system confidence decreases
   updateUncertaintyByTime() {
@@ -210,10 +199,11 @@ const Storage = {
       const lastSeen = new Date(legendState.last_seen).getTime();
       const daysSince = (now - lastSeen) / (1000 * 60 * 60 * 24);
 
-      // After 7 days, uncertainty increases
+      // After 7 days, uncertainty increases gradually
       if (daysSince > 7) {
-        const uncertaintyIncrease = Math.min(0.5, (daysSince - 7) * 0.015);
-        const newUncertainty = Math.min(0.9, 0.5 + uncertaintyIncrease);
+        // Increase uncertainty based on existing level (don't reset to 0.5)
+        const increase = Math.min(0.4, (daysSince - 7) * 0.01);
+        const newUncertainty = Math.min(0.9, (legendState.uncertainty || 0) + increase);
         
         if (newUncertainty > legendState.uncertainty) {
           legendState.uncertainty = newUncertainty;
