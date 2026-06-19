@@ -536,8 +536,9 @@ const App = {
     `;
   },
 
-  // Library collapse state
+  // Library state
   libraryCollapseState: {},
+  libraryEventsBound: false,
 
   // Render library - O-legend style layout
   renderLibrary() {
@@ -602,40 +603,27 @@ const App = {
       return -1;
     }
     
-    function renderCard(legend) {
-      return `<div class="legend-card" data-id="${legend.id}" data-std="${legend.standard}">
-        <div class="legend-icon">
-          <img src="${legend.icon}" alt="${legend.name}" loading="lazy">
-        </div>
-        <div class="legend-info">
-          <div class="legend-code">${legend.code}</div>
-          <div class="legend-name">${legend.name}</div>
-          ${legend.name_en ? `<div class="legend-en">${legend.name_en}</div>` : ''}
-        </div>
-      </div>`;
-    }
-    
-    let html = '';
+    // Build HTML
+    let html = '<div class="list-wrap">';
     
     stdOrder.forEach(std => {
       const stdItems = groups[std];
       if (!stdItems || stdItems.length === 0) return;
       
-      // Check if this standard group is collapsed
       const isStdCollapsed = this.libraryCollapseState[std] !== undefined 
         ? this.libraryCollapseState[std] 
-        : (std !== 'issprom2019'); // First one (ISSprOM) expanded by default
+        : (std !== 'issprom2019');
       
       const stdCollapsedCls = isStdCollapsed ? ' collapsed' : '';
       
       html += `<div class="group-header${stdCollapsedCls}" data-std-group="${std}">
         <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        <span>${stdLabels[std]} <small style="opacity:.65;font-size:.68rem">· ${stdItems.length} 项</small></span>
+        <span>${stdLabels[std]} <small>· ${stdItems.length} 项</small></span>
       </div>`;
       
       html += `<div class="group-items${stdCollapsedCls}" data-std-group="${std}">`;
       
-      // Group by category within standard
+      // Group by category
       const categories = {};
       stdItems.forEach(item => {
         const cat = getCategoryForLegend(item);
@@ -650,60 +638,76 @@ const App = {
         const catItems = categories[catId];
         const catName = cats[catId] || '其他';
         
-        // Check if this category is collapsed
         const catKey = `${std}_${catId}`;
         const isCatCollapsed = this.libraryCollapseState[catKey] !== undefined 
           ? this.libraryCollapseState[catKey] 
-          : true; // Categories collapsed by default
+          : true;
         
         const catCollapsedCls = isCatCollapsed ? ' collapsed' : '';
         
-        html += `<div class="group-header cat-header${catCollapsedCls}" data-cat-group="${catKey}">
+        html += `<div class="group-header cat-header${catCollapsedCls}" data-cat="${catKey}">
           <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          <span>${catName} <small style="opacity:.65;font-size:.68rem">· ${catItems.length} 项</small></span>
+          <span>${catName} <small>· ${catItems.length} 项</small></span>
         </div>`;
         
-        html += `<div class="group-items cat-items${catCollapsedCls}" data-cat-group="${catKey}">`;
-        html += catItems.map(renderCard).join('');
+        html += `<div class="group-items cat-items${catCollapsedCls}" data-cat="${catKey}">`;
+        catItems.forEach(legend => {
+          html += `<div class="card" data-std="${legend.standard}" data-id="${legend.id}">
+            <div class="img-col"><div class="img-wrap"><img src="${legend.icon}" alt="${legend.code} ${legend.name}" loading="lazy"></div></div>
+            <div class="text-col">
+              <div class="code">${legend.code}</div>
+              <div class="name">${legend.name}</div>
+              ${legend.name_en ? `<div class="en-sub">${legend.name_en}</div>` : ''}
+            </div>
+          </div>`;
+        });
         html += '</div>';
       });
       
       html += '</div>';
     });
     
+    html += '</div>';
     container.innerHTML = html;
     
-    // Bind event delegation for collapse/expand
-    container.addEventListener('click', (e) => {
-      const header = e.target.closest('.group-header');
-      if (!header) return;
+    // Bind events only once (event delegation)
+    if (!this.libraryEventsBound) {
+      this.libraryEventsBound = true;
       
-      const stdGroup = header.dataset.stdGroup;
-      const catGroup = header.dataset.catGroup;
-      
-      if (stdGroup) {
-        // Toggle standard group
-        this.libraryCollapseState[stdGroup] = !this.libraryCollapseState[stdGroup];
-        const isCollapsed = this.libraryCollapseState[stdGroup];
-        header.classList.toggle('collapsed', isCollapsed);
-        const items = container.querySelector(`.group-items[data-std-group="${stdGroup}"]`);
-        if (items) items.classList.toggle('collapsed', isCollapsed);
-      } else if (catGroup) {
-        // Toggle category group
-        this.libraryCollapseState[catGroup] = !this.libraryCollapseState[catGroup];
-        const isCollapsed = this.libraryCollapseState[catGroup];
-        header.classList.toggle('collapsed', isCollapsed);
-        const items = container.querySelector(`.group-items[data-cat-group="${catGroup}"]`);
-        if (items) items.classList.toggle('collapsed', isCollapsed);
-      }
-    });
-    
-    // Bind card clicks
-    container.querySelectorAll('.legend-card').forEach(card => {
-      card.addEventListener('click', () => {
-        this.showLegendDetail(card.dataset.id);
+      container.addEventListener('click', (e) => {
+        // Card click -> open detail
+        const card = e.target.closest('.card');
+        if (card) {
+          this.showLegendDetail(card.dataset.id);
+          return;
+        }
+        
+        // Group header click -> toggle collapse
+        const header = e.target.closest('.group-header');
+        if (header) {
+          const stdGroup = header.dataset.stdGroup;
+          const catGroup = header.dataset.cat;
+          
+          if (stdGroup) {
+            // Toggle standard group
+            const items = container.querySelector(`.group-items[data-std-group="${stdGroup}"]`);
+            if (items) {
+              header.classList.toggle('collapsed');
+              items.classList.toggle('collapsed');
+              this.libraryCollapseState[stdGroup] = header.classList.contains('collapsed');
+            }
+          } else if (catGroup) {
+            // Toggle category group
+            const items = container.querySelector(`.group-items[data-cat="${catGroup}"]`);
+            if (items) {
+              header.classList.toggle('collapsed');
+              items.classList.toggle('collapsed');
+              this.libraryCollapseState[catGroup] = header.classList.contains('collapsed');
+            }
+          }
+        }
       });
-    });
+    }
   },
 
   // Search legends
@@ -711,12 +715,11 @@ const App = {
     const q = query.toLowerCase().trim();
     
     if (!q) {
-      // Reset to normal view
       this.renderLibrary();
       return;
     }
     
-    // Search mode: show matching items in all standards
+    // Search mode: show matching items grouped by standard
     const results = { issprom2019: [], isom2017: [], iscd2018: [] };
     ALL_LEGENDS.forEach(legend => {
       const match = legend.code.toLowerCase().includes(q) ||
@@ -736,7 +739,7 @@ const App = {
     };
     
     const stdOrder = ['issprom2019', 'isom2017', 'iscd2018'];
-    let html = '';
+    let html = '<div class="list-wrap">';
     let totalResults = 0;
     
     stdOrder.forEach(std => {
@@ -746,36 +749,29 @@ const App = {
       
       html += `<div class="group-header" data-std-group="${std}">
         <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        <span>${stdLabels[std]} <small style="opacity:.65;font-size:.68rem">· ${items.length} 个结果</small></span>
+        <span>${stdLabels[std]} <small>· ${items.length} 个结果</small></span>
       </div>`;
       
       html += `<div class="group-items" data-std-group="${std}">`;
-      html += items.map(legend => `
-        <div class="legend-card" data-id="${legend.id}" data-std="${legend.standard}">
-          <div class="legend-icon">
-            <img src="${legend.icon}" alt="${legend.name}" loading="lazy">
+      items.forEach(legend => {
+        html += `<div class="card" data-std="${legend.standard}" data-id="${legend.id}">
+          <div class="img-col"><div class="img-wrap"><img src="${legend.icon}" alt="${legend.code} ${legend.name}" loading="lazy"></div></div>
+          <div class="text-col">
+            <div class="code">${legend.code}</div>
+            <div class="name">${legend.name}</div>
+            ${legend.name_en ? `<div class="en-sub">${legend.name_en}</div>` : ''}
           </div>
-          <div class="legend-info">
-            <div class="legend-code">${legend.code}</div>
-            <div class="legend-name">${legend.name}</div>
-            ${legend.name_en ? `<div class="legend-en">${legend.name_en}</div>` : ''}
-          </div>
-        </div>
-      `).join('');
+        </div>`;
+      });
       html += '</div>';
     });
+    
+    html += '</div>';
     
     if (totalResults === 0) {
       container.innerHTML = '<div class="empty-hint">没有找到匹配的图例</div>';
     } else {
       container.innerHTML = html;
-      
-      // Bind clicks
-      container.querySelectorAll('.legend-card').forEach(card => {
-        card.addEventListener('click', () => {
-          this.showLegendDetail(card.dataset.id);
-        });
-      });
     }
   },
 
