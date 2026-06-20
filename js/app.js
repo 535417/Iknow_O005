@@ -311,7 +311,7 @@ const App = {
     `;
     
     // Start timer
-    this.startChoiceTimer(question.timeLimit);
+    this.startChoiceTimer(question.timeLimit, question.correctIndex);
   },
 
   // Confirm exit training
@@ -336,11 +336,12 @@ const App = {
   },
 
   // Start choice timer
-  startChoiceTimer(timeLimit) {
+  startChoiceTimer(timeLimit, correctIndex) {
     const timerBar = document.getElementById('timerBar');
     if (!timerBar) return;
     
     const startTime = Date.now();
+    const self = this;
     
     this.choiceTimer = setInterval(() => {
       const elapsed = Date.now() - startTime;
@@ -348,11 +349,11 @@ const App = {
       timerBar.style.width = (progress * 100) + '%';
       
       if (progress >= 1) {
-        this.stopChoiceTimer();
+        self.stopChoiceTimer();
         if (!Training.currentQuestion?.answered) {
           Training.currentQuestion.answered = true;
-          Training.submitChoiceAnswer(-1, question.correctIndex);
-          this.showChoiceFeedback(-1, question.correctIndex, { correct: false });
+          Training.submitChoiceAnswer(-1, correctIndex);
+          self.showChoiceFeedback(-1, correctIndex, { correct: false });
         }
       }
     }, 50);
