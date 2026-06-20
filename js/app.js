@@ -380,10 +380,17 @@ const App = {
       btn.disabled = true;
     });
     
-    // Auto advance after delay
+    // Faster transition: 800ms with fade animation
     setTimeout(() => {
-      App.showTrainingQuestion();
-    }, 1500);
+      const content = document.getElementById('trainingContent');
+      content.style.opacity = '0';
+      content.style.transition = 'opacity 0.2s ease';
+      
+      setTimeout(() => {
+        App.showTrainingQuestion();
+        content.style.opacity = '1';
+      }, 200);
+    }, 600);
   },
 
   // Show flip question

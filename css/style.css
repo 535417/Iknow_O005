@@ -567,6 +567,10 @@ body {
 }
 
 /* ===== Training View ===== */
+#trainingContent {
+  transition: opacity 0.2s ease;
+}
+
 .training-setup {
   text-align: center;
   padding: 16px 0;
@@ -814,11 +818,26 @@ body {
 .option-btn.correct {
   border-color: var(--success);
   background: rgba(45, 106, 79, 0.15);
+  animation: pulse-correct 0.3s ease;
 }
 
 .option-btn.wrong {
   border-color: var(--danger);
   background: rgba(211, 47, 47, 0.15);
+  animation: pulse-wrong 0.3s ease;
+}
+
+@keyframes pulse-correct {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse-wrong {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.98); }
+  50% { transform: scale(1.01); }
+  100% { transform: scale(1); }
 }
 
 .option-btn .option-text {
