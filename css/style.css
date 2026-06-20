@@ -709,6 +709,23 @@ body {
   padding: 0 4px;
 }
 
+.btn-exit-training {
+  padding: 6px 12px;
+  background: rgba(211, 47, 47, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(211, 47, 47, 0.3);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-exit-training:active {
+  background: rgba(211, 47, 47, 0.2);
+  transform: scale(0.95);
+}
+
 .question-type {
   background: var(--primary);
   color: white;

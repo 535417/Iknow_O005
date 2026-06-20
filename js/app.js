@@ -290,6 +290,7 @@ const App = {
     
     container.innerHTML = `
       <div class="question-header">
+        <button class="btn-exit-training" onclick="App.confirmExitTraining()">✕ 退出</button>
         <span class="question-type">选择题</span>
         <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
@@ -311,6 +312,14 @@ const App = {
     
     // Start timer
     this.startChoiceTimer(question.timeLimit);
+  },
+
+  // Confirm exit training
+  confirmExitTraining() {
+    if (confirm('确定要退出训练吗？当前进度将保留。')) {
+      Training.cancelSession();
+      this.showView('home');
+    }
   },
 
   // Handle option selection
@@ -383,6 +392,7 @@ const App = {
     
     container.innerHTML = `
       <div class="question-header">
+        <button class="btn-exit-training" onclick="App.confirmExitTraining()">✕ 退出</button>
         <span class="question-type">翻转卡</span>
         <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
@@ -435,6 +445,7 @@ const App = {
     
     container.innerHTML = `
       <div class="question-header">
+        <button class="btn-exit-training" onclick="App.confirmExitTraining()">✕ 退出</button>
         <span class="question-type">闪卡</span>
         <span class="question-progress">${Training.currentSession.results.length + 1}/${Training.currentSession.targetCount}</span>
       </div>
