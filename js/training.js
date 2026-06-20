@@ -85,7 +85,32 @@ const Training = {
   // Generate choice question (4 options)
   generateChoiceQuestion(legend) {
     const distractors = ConfusionEngine.generateDistractors(legend.id, 3);
-    const options = shuffle([legend, ...distractors]);
+    
+    // Deduplicate by name (different standards may have same name)
+    const usedNames = new Set([legend.name]);
+    const uniqueDistractors = [];
+    
+    for (const d of distractors) {
+      if (!usedNames.has(d.name) && uniqueDistractors.length < 3) {
+        usedNames.add(d.name);
+        uniqueDistractors.push(d);
+      }
+    }
+    
+    // Fill remaining slots if needed
+    if (uniqueDistractors.length < 3) {
+      const remaining = ALL_LEGENDS
+        .filter(l => l.id !== legend.id && !usedNames.has(l.name))
+        .sort(() => Math.random() - 0.5);
+      
+      for (const r of remaining) {
+        if (uniqueDistractors.length >= 3) break;
+        uniqueDistractors.push(r);
+        usedNames.add(r.name);
+      }
+    }
+    
+    const options = shuffle([legend, ...uniqueDistractors]);
     
     return {
       type: 'choice',
