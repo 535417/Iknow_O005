@@ -586,11 +586,11 @@ const App = {
     
     const stdOrder = ['issprom2019', 'isom2017', 'iscd2018'];
     const stdLabels = {
-      issprom2019: 'ISSprOM 2019-2',
-      isom2017: 'ISOM 2017-2',
-      iscd2018: 'ISCD 2018'
+      issprom2019: 'ISSprOM 2019-2（短距离）',
+      isom2017: 'ISOM 2017-2（长距离）',
+      iscd2018: 'ISCD 2018（检查点说明表）'
     };
-    
+
     const catMap = {
       issprom2019: {
         1: '地貌', 2: '岩壁和石块', 3: '水体和沼泽', 4: '植被', 
@@ -765,15 +765,15 @@ const App = {
     
     const container = document.getElementById('libraryContent');
     const stdLabels = {
-      issprom2019: 'ISSprOM 2019-2',
-      isom2017: 'ISOM 2017-2',
-      iscd2018: 'ISCD 2018'
+      issprom2019: 'ISSprOM 2019-2（短距离）',
+      isom2017: 'ISOM 2017-2（长距离）',
+      iscd2018: 'ISCD 2018（检查点说明表）'
     };
-    
+
     const stdOrder = ['issprom2019', 'isom2017', 'iscd2018'];
     let html = '<div class="list-wrap">';
     let totalResults = 0;
-    
+
     stdOrder.forEach(std => {
       const items = results[std];
       if (items.length === 0) return;

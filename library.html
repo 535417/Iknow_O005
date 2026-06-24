@@ -53,6 +53,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
   .scroll-top-btn{background:rgba(63,185,80,.65)}
   .card:active{background:rgba(45,106,79,.3)!important}
   .img-overlay{background:rgba(0,0,0,.95)}
+  .footer{background:rgba(22,27,34,.95)!important;border-color:rgba(240,246,240,.08)!important}
+  .footer p{color:#8b949e!important}
+  .footer a{color:#3fb950!important}
+  .footer .copyright{color:#6e7681!important}
+  .modal-box{background:#161b22!important}
+  .modal-box h2{color:#3fb950!important;border-color:rgba(240,246,240,.08)!important}
+  .modal-box p{color:#c9d1d9!important}
+  .modal-box a{color:#3fb950!important}
+  .modal-close{background:rgba(255,255,255,.08)!important;color:#8b949e!important}
+  .modal-close:hover{background:rgba(255,255,255,.15)!important}
 }
 /* ===== Reduced Motion ===== */
 @media (prefers-reduced-motion:reduce){
@@ -78,6 +88,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .tab:hover{background:rgba(45,106,79,.08);color:#2D6A4F}
 .tab.active{background:rgba(45,106,79,.12);color:#2D6A4F;border-color:rgba(45,106,79,.3);font-weight:600}
 .tab .count{font-size:.7rem;opacity:.65;margin-left:4px}
+.tab .std-desc{font-size:.68rem;opacity:.55;margin-left:4px;font-weight:400}
 
 /* ===== Card List ===== */
 .list-wrap{padding:0 12px 80px;max-width:900px;margin:0 auto}
@@ -228,9 +239,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
   </div>
   <div class="tab-bar" id="tabBar" style="padding:0">
     <button class="tab active" data-std="all">全部<span class="count" id="countAll"></span></button>
-    <button class="tab" data-std="issprom2019">ISSprOM 2019-2<span class="count" id="countISS"></span></button>
-    <button class="tab" data-std="isom2017">ISOM 2017-2<span class="count" id="countISOM"></span></button>
-    <button class="tab" data-std="iscd2018">ISCD 2018<span class="count" id="countISCD"></span></button>
+    <button class="tab" data-std="issprom2019">ISSprOM 2019-2<span class="std-desc">短距离</span><span class="count" id="countISS"></span></button>
+    <button class="tab" data-std="isom2017">ISOM 2017-2<span class="std-desc">长距离</span><span class="count" id="countISOM"></span></button>
+    <button class="tab" data-std="iscd2018">ISCD 2018<span class="std-desc">检查点说明表</span><span class="count" id="countISCD"></span></button>
   </div>
 </div>
 
@@ -308,9 +319,9 @@ const DATA_BY_STD = {
 };
 
 const STD_LABELS = {
-  isom2017: 'ISOM 2017-2',
-  issprom2019: 'ISSprOM 2019-2',
-  iscd2018: 'ISCD 2018'
+  isom2017: 'ISOM 2017-2（长距离）',
+  issprom2019: 'ISSprOM 2019-2（短距离）',
+  iscd2018: 'ISCD 2018（检查点说明表）'
 };
 
 const STD_ICON_DIR = {

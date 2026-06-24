@@ -104,6 +104,15 @@
           <div class="empty-hint">加载中...</div>
         </div>
       </div>
+
+      <!-- Footer -->
+      <footer class="footer" id="siteFooter">
+        <div class="disclaimer">
+          <p>部分内容基于 <a href="https://omapwiki.orienteering.sport" target="_blank" rel="noopener">O-Map Wiki</a> 整理翻译，遵循 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> 协议。</p>
+          <p><a href="javascript:void(0)" id="aboutLink">关于本站 →</a></p>
+          <p class="copyright">© 2026 OriteerLegend</p>
+        </div>
+      </footer>
     </div>
 
     <!-- Training View -->
@@ -145,6 +154,20 @@
     </div>
   </div>
 
+  <!-- ===== ABOUT MODAL ===== -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal-box">
+      <button class="modal-close" id="disclaimerClose" aria-label="关闭">✕</button>
+      <h2>关于本站</h2>
+      <p>本网站为非官方中文定向制图资料索引网站，旨在促进定向运动地图规范的学习、交流与研究。</p>
+      <p>部分内容来源于 <a href="https://omapwiki.orienteering.sport" target="_blank" rel="noopener">O-Map Wiki</a>，包括但不限于地图符号定义、规范说明、图例示意及相关技术资料。原始内容版权归其各自作者及贡献者所有。</p>
+      <p>依据 O-Map Wiki 公开声明，其内容采用 Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）许可协议发布。本网站对相关内容进行了翻译、整理、格式转换和适当改编，并按照相同许可协议进行共享。</p>
+      <p>本网站与 International Orienteering Federation（IOF）、O-Map Wiki 及其关联组织不存在任何官方关系，不代表其观点、政策或立场。</p>
+      <p>尽管本站尽力保证翻译与整理内容的准确性，但不保证所有信息完全无误。对于因使用本站内容而产生的任何直接或间接损失，本站不承担责任。</p>
+      <p>如您认为本站内容涉及版权、署名或其他权益问题，请与网站管理员 <a href="mailto:evcgxi79373q@hotmail.com">evcgxi79373q@hotmail.com</a> 联系，我们将在核实后及时处理。</p>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="js/data.js"></script>
   <script src="js/storage.js"></script>
@@ -171,6 +194,38 @@
     // Initialize app when DOM is ready
     document.addEventListener('DOMContentLoaded', () => {
       App.init();
+
+      // Bind about link (footer is in static HTML)
+      var aboutLink = document.getElementById('aboutLink');
+      if (aboutLink) {
+        aboutLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          var modal = document.getElementById('disclaimerModal');
+          if (modal) modal.classList.add('show');
+        });
+      }
+
+      // Bind modal close
+      var modalClose = document.getElementById('disclaimerClose');
+      var modalOverlay = document.getElementById('disclaimerModal');
+      if (modalClose && modalOverlay) {
+        modalClose.addEventListener('click', function() {
+          modalOverlay.classList.remove('show');
+        });
+        modalOverlay.addEventListener('click', function(e) {
+          if (e.target === modalOverlay) modalOverlay.classList.remove('show');
+        });
+      }
+    });
+
+    // Global escape key handler for modal
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        var modal = document.getElementById('disclaimerModal');
+        if (modal && modal.classList.contains('show')) {
+          modal.classList.remove('show');
+        }
+      }
     });
   </script>
 </body>

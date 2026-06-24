@@ -99,7 +99,7 @@ const CATEGORY_NAMES = {
 };
 
 const STANDARD_NAMES = {
-  isom2017: 'ISOM 2017-2',
-  issprom2019: 'ISSprOM 2019-2',
-  iscd2018: 'ISCD 2018'
+  isom2017: 'ISOM 2017-2（长距离）',
+  issprom2019: 'ISSprOM 2019-2（短距离）',
+  iscd2018: 'ISCD 2018（检查点说明表）'
 };
